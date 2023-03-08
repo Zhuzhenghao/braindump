@@ -32,7 +32,7 @@
 
 1. Kubernetes **于莉**
 
-   - 用 protoc 编译 go 文件成 ts 文件，包含类型和 远程调用方法
+   - 用 protoc 编译 go 文件成 ts 文件，包含类型和远程调用方法
    - 编写 YAML 部署微前端，结合 GitOps
    - 常用资源对象的实战
    - Docker
@@ -134,3 +134,8 @@
 - 如果所研究的主题有 Demo 演示，需在对应 `samples` 的目录下，创建子目录存放 Demo 代码
 
 ## 如何贡献
+
+## TODO
+
+- [ ] 添加 Markdown lint
+- [ ] GitBook
