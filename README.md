@@ -18,11 +18,11 @@
 
 ### 工具库
 
-- [ ] 选主题
+- [x] 选主题
 - [ ] 明确时间点，输出什么内容
 - [ ] 每个人整理三次的分享主题
 
-1. Kubernetes
+1. Kubernetes **于莉**
 
    - 用 protoc 编译 go 文件成 ts 文件，包含类型和 远程调用方法
    - 编写 YAML 部署微前端，结合 GitOps
@@ -55,7 +55,7 @@
    - git actions - 基于 k8s-ui，实现 PR 的 lint 检查、单元测试、e2e 测试通过后，PR 才可以被合并
    - [Gitlab Job](https://gitlab.daocloud.cn/help/ci/examples/index)，配置 Gitlab Jobs 完成自动化构建部署
 
-4. Nginx
+4. Nginx **张茜**
 
    - 静态资源代理
    - 反向代理
