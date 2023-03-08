@@ -36,7 +36,6 @@
    - 编写 YAML 部署微前端，结合 GitOps
    - 常用资源对象的实战
    - Docker
-
      - 基础命令
      - 构建配置
      - Docker 进阶 exec、log、docker compose
@@ -44,7 +43,7 @@
 
 2. CICD **孙国斌**
 
-   - Jenkins
+   - Jenkins（输出学习文章，演示）
      - 安装 Jenkins
      - Jenkins 配置
      - 搭建 Jenkins 集群
