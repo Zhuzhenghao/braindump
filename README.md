@@ -54,13 +54,21 @@
 
 3. Git **朱正浩**
 
-   - 分支规范
-   - 提交规范 github issue/feature/bug Templates
-   - 版本管理、tag、Release Notes
-   - Git 常用命令：git rebase、reset、diff、stash
-   - GitOps
-   - git actions - 基于 k8s-ui，实现 PR 的 lint 检查、单元测试、e2e 测试通过后，PR 才可以被合并
-   - [Gitlab Job](https://gitlab.daocloud.cn/help/ci/examples/index)，配置 Gitlab Jobs 完成自动化构建部署
+   - Git 高级特性
+     - Git rebase
+     - Git stash
+     - Git diff
+     - Git reset
+     - [常用命令](https://github.com/Zhuzhenghao/git-tips)
+   - Git 规范
+     - 分支
+     - commit
+     - PR
+     - issue/feature/bug Templates
+     - Git hooks
+     - tag、Release
+   - [GitHub Actions](https://docs.github.com/en/actions)
+   - \*[Gitlab Job](https://gitlab.daocloud.cn/help/ci/examples/index)
 
 4. Nginx **张茜**
 
