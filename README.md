@@ -79,8 +79,23 @@
    - 静态资源代理
    - 反向代理
    - 负载均衡
-   - 高级配置 - websocket、http2
+     - 轮询 
+     - 加权轮询
+     - IP 哈希
+     - 其他算法
+     - 应用场景
+   - 高级配置
+     - websocket
+     - http2
+   - 跨域
    - Linux 命令
+     - nginx -c tmpnginx.conf
+     - nginx  -t
+     - nginx  -s stop、nginx  -s quit
+     - nginx  -s reload
+     - nginx  -s reopen
+     - 其他常用命令
+   - 性能优化
 
 ## 周会计划
 
