@@ -43,14 +43,18 @@
 
 2. CICD **孙国斌**
 
-   - Jenkins（输出学习文章，演示）
-     - 安装 Jenkins
+   - Jenkins
      - Jenkins 配置
-     - 搭建 Jenkins 集群
-   - CI/CD 管道
-   - 配置 Jenkins 自动化构建
-   - Jenkins 对接 gitlab
-   - 构建的 shell 脚本
+     - 创建任务
+     - 配置git hooks
+     - 实现自动化构建流程
+     - 实现自动化部署流程
+   - CI流水线
+   - CD流水线
+   - CI/CD管道
+     - 阶段
+     - 模式
+   - CICD流水线
 
 3. Git **朱正浩**
 
