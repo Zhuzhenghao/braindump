@@ -24,6 +24,27 @@
 - [ ] 明确时间点，输出什么内容
 - [ ] 每个人整理三次的分享主题
 
+1. 胡锦霞
+   
+   - 组件库国际化
+     -  扒一扒elementui的国际化实现
+   - 组件库支持全量引入与独立引入
+   - 组件库编译
+     - umd
+     - esm
+2. 张鹏胜
+   - 组件库单元测试实战
+   - 组件库自动化部署
+   - 组件库自动化测试
+3. 尹朋
+   - 组件库支持预览
+   - 组件库版本管理与多版本切换预览
+   - 组件库文档的编写
+4. 范弘琰
+   - 组件库主题的切换
+     - 主题可定制化
+     - 生成主题css
+   - 组件库 css 相关
 ### 工具库
 
 - [x] 选主题
@@ -32,19 +53,13 @@
 
 1. Kubernetes **于莉**
 
-   - What's gRPC?
-     - gRPC 封装前端网络请求
-     - 用 protoc 编译 go 文件成 ts 文件，包含类型和远程调用方法
-   - Kubernetes 部分资源对象实战
-     - Pod
-     - Deployment
-     - Service
-     - ConfigMap
-     - \* 编写 YAML 部署微前端，结合 GitOps
+   - 用 protoc 编译 go 文件成 ts 文件，包含类型和远程调用方法
+   - 编写 YAML 部署微前端，结合 GitOps
+   - 常用资源对象的实战
    - Docker
-     - Docker Buildx (可指定平台的枚举值)
-     - Docker 进阶
-      - exec、attach、log、docker compose
+     - 基础命令
+     - 构建配置
+     - Docker 进阶 exec、log、docker compose
      - Install vim inside Ningx container
 
 2. CICD **孙国斌**
