@@ -45,6 +45,7 @@
      - 主题可定制化
      - 生成主题css
    - 组件库 css 相关
+
 ### 工具库
 
 - [x] 选主题
@@ -53,13 +54,19 @@
 
 1. Kubernetes **于莉**
 
-   - 用 protoc 编译 go 文件成 ts 文件，包含类型和远程调用方法
-   - 编写 YAML 部署微前端，结合 GitOps
-   - 常用资源对象的实战
+   - What's gRPC?
+     - gRPC 封装前端网络请求
+     - 用 protoc 编译 go 文件成 ts 文件，包含类型和远程调用方法
+   - Kubernetes 部分资源对象实战
+     - Pod
+     - Deployment
+     - Service
+     - ConfigMap
+     - \* 编写 YAML 部署微前端，结合 GitOps
    - Docker
-     - 基础命令
-     - 构建配置
-     - Docker 进阶 exec、log、docker compose
+     - Docker Buildx (可指定平台的枚举值)
+     - Docker 进阶
+      - exec、attach、log、docker compose
      - Install vim inside Ningx container
 
 2. CICD **孙国斌**
