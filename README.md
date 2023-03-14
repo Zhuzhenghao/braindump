@@ -116,25 +116,25 @@ Q4.
 
 4. Nginx **张茜**
 
-   - 静态资源代理
-   - 反向代理
-   - 负载均衡
+   - [ ] 配置及应用
+     - 静态资源代理
+     - 反向代理
+     - 高级配置
+       - websocket
+       - http2
+     - 跨域
+   - [ ] 负载均衡
      - 轮询
      - 加权轮询
      - IP 哈希
      - 其他算法
      - 应用场景
-   - 高级配置
-     - websocket
-     - http2
-   - 跨域
-   - Linux 命令
+   - [ ] Linux 命令
      - 常用命令 ls、rm、tail、cd
      - 文件命令 touch、which、cp、cat、grep、find、curl
      - 目录命令 pwd、mkdir、rmdir
      - 进程 kill、ps、top
      - 其他 mv、ping、telnet、管道｜、clear、alias
-   - 性能优化
 
 ## 周会计划
 
