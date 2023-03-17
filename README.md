@@ -14,101 +14,131 @@
 
 ### 微前端
 
-- [ ] 分主题，选主题
-- [ ] 明确时间点，输出什么内容
-- [ ] 每个人整理四次的分享主题
+Q1:
+
+- [ ] 张雯: 微前端的优缺点（文章）
+- [ ] 姚若尘: 微前端的方案（文章）
+- [ ] 李艳: 微前端应用间通信（文章+Demo）
+
+Q2.
+
+- [ ] 张雯: 微前端 qiankun 实战——搭建基座应用（文章+Demo）
+- [ ] 姚若尘: qiankun 预加载与缓存（文章+Demo）
+- [ ] 李艳: 微前端路由管理（文章+Demo）
+
+Q3.
+
+- [ ] 姚若尘: qiankun 源码分析——沙箱隔离（Demo）
+- [ ] 张雯: [qiankun](https://qiankun.umijs.org/) 微前端应用加载实现原理（Demo）
+- [ ] 李艳: 微前端的权限管理（Demo）
+
+Q4.
+
+- [ ] 姚若尘: 微前端框架之 single-spa（文章+Demo）
+- [ ] 张雯: 微前端 [micro-app](https://micro-zoe.github.io/micro-app/) 实战（Demo）
+- [ ] 李艳: 微前端的性能优化（文章+Demo）
 
 ### 组件库
 
-- [ ] 分主题，选主题
-- [ ] 明确时间点，输出什么内容
-- [ ] 每个人整理三次的分享主题
-
 1. 胡锦霞
-   
-   - 组件库国际化
-     -  扒一扒elementui的国际化实现
-   - 组件库支持全量引入与独立引入
-   - 组件库编译
+
+   - [ ] 组件库国际化（文章+Demo）
+     - 扒一扒 ElementUI 的国际化实现
+   - [ ] 组件库支持全量引入与独立引入
+   - [ ] 组件库编译
      - umd
      - esm
+
 2. 张鹏胜
-   - 组件库单元测试实战
-   - 组件库自动化部署至 NPM
-   - 组件库 e2e 测试
+   - [ ] 组件库单元测试实战
+   - [ ] 组件库 e2e 测试
+   - [ ] 组件库自动化（Gitlab Action）发布 NPM
 3. 尹朋
-   - 组件库支持预览
-   - 组件库版本管理与多版本切换预览
-   - 组件库文档的编写
+   - [ ] 件库文档的编写、支持预览
+   - [ ] 组件库版本管理与多版本切换预览
+   - [ ] TODO:
 4. 范弘琰
-   - 组件库主题的切换
+   - [ ] 组件库主题的切换
      - 主题可定制化
-     - 生成主题css
-   - 组件库 css 相关
+     - 生成主题 CSS
+   - [ ] 组件库 CSS 相关 --> 哪些新技术
+     - 工具函数
+     - SASS
+     - https://hackr.io/blog/best-css-frameworks
+   - [ ] TODO:
 
 ### 工具库
 
-- [x] 选主题
-- [ ] 明确时间点，输出什么内容
-- [ ] 每个人整理三次的分享主题
-
 1. Kubernetes **于莉**
 
-   - What's gRPC?
-     - gRPC 封装前端网络请求
-     - 用 protoc 编译 go 文件成 ts 文件，包含类型和远程调用方法
-   - Kubernetes 部分资源对象实战
+   - [ ] Kubernetes 部分资源对象实战
      - Pod
      - Deployment
      - Service
      - ConfigMap
      - \* 编写 YAML 部署微前端，结合 GitOps
-   - Docker
+   - [ ] Docker
      - Docker Buildx (可指定平台的枚举值)
      - Docker 进阶
-      - exec、attach、log、docker compose
+     - exec、attach、log、docker compose
      - Install vim inside Ningx container
+   - [ ] What's gRPC?
+     - gRPC 封装前端网络请求
+     - 用 protoc 编译 go 文件成 ts 文件，包含类型和远程调用方法
 
 2. CICD **孙国斌**
 
-   - Jenkins
+   - [ ] Jenkins
      - Jenkins 配置
      - 创建任务
-     - 配置git hooks
+     - 配置 Git hooks
      - 实现自动化构建流程
      - 实现自动化部署流程
-   - CI流水线
-   - CD流水线
-   - CI/CD管道
+   - [ ] CI/CD 管道
      - 阶段
      - 模式
-   - CICD流水线
+     - Workflow
+   - [ ] CICD 流水线
 
 3. Git **朱正浩**
 
-   - Git 高级特性
+   - [ ] Git 高级特性
      - Git rebase
      - Git stash
      - Git diff
      - Git reset
      - [常用命令](https://github.com/Zhuzhenghao/git-tips)
-   - Git 规范
+   - [ ] Git 规范
      - 分支
      - commit
      - PR
      - issue/feature/bug Templates
      - Git hooks
      - tag、Release
-   - [GitHub Actions](https://docs.github.com/en/actions)
+   - [ ] [GitHub Actions](https://docs.github.com/en/actions)
    - \*[Gitlab Job](https://gitlab.daocloud.cn/help/ci/examples/index)
 
 4. Nginx **张茜**
 
-   - 静态资源代理
-   - 反向代理
-   - 负载均衡
-   - 高级配置 - websocket、http2
-   - Linux 命令
+   - [ ] 配置及应用
+     - 静态资源代理
+     - 反向代理
+     - 高级配置
+       - websocket
+       - http2
+     - 跨域
+   - [ ] 负载均衡
+     - 轮询
+     - 加权轮询
+     - IP 哈希
+     - 其他算法
+     - 应用场景
+   - [ ] Linux 命令
+     - 常用命令 ls、rm、tail、cd
+     - 文件命令 touch、which、cp、cat、grep、find、curl
+     - 目录命令 pwd、mkdir、rmdir
+     - 进程 kill、ps、top
+     - 其他 mv、ping、telnet、管道｜、clear、alias
 
 ## 周会计划
 
@@ -174,7 +204,11 @@
 
 ## 如何贡献
 
+1. Fork 仓库
+2. TODO: 于莉
+
 ## TODO
 
 - [ ] 添加 Markdown lint
 - [ ] GitBook
+- [ ] Git Ignore
