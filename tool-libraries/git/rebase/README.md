@@ -109,7 +109,10 @@ git rebase --autostash
 git rebase -i HEAD~3
 ```
 
+![](iShot_2023-03-29_15.30.55.gif)
+
+![](2023-03-29-15-33-50.png)
+
 > 本文参考链接：
-> https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase
 >
-> https://waynerv.com/posts/git-rebase-intro/
+> https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase > https://waynerv.com/posts/git-rebase-intro/
