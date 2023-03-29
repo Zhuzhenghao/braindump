@@ -1,1 +1,1 @@
-this is a git diff test example
+this is a diff example
