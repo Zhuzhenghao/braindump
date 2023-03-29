@@ -200,7 +200,26 @@ Q4.
 ## 如何贡献
 
 1. Fork 仓库
-2. TODO: 于莉
+2. git clone [your repository url]
+   // 指定上游仓库 用于同步上游仓库最新代码（git fetch upstream 或者 git merge upstream/master）
+3. git remote add upstream git@github.com:Zhuzhenghao/braindump.git
+4. git checkout -b [your new branch]
+5. git commit -m '[a message]'
+6. git push [your branch]
+7. Create a merge request form your repository to Zhuzhenghao/braindump
+8. The title of pr can be the same as the commit message
+9. Assign your pr reviewer: /assign_reviewer @user
+
+```shell
+// commit message
+  <type>(<scope>): <subject>
+
+// type: feat/fix/docs
+// scope: the changes related modules (eg:tool-libraries)
+// subject: detailed description of the changes
+
+// eg: feat(tool-libraries): add docker related docs
+```
 
 ## TODO
 
