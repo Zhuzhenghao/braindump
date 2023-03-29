@@ -11,7 +11,8 @@ Git rebase 可以将一个分支的所有提交应用到另一个分支上。
 日常我们会基于`main`分支，新建一个分支`feature`来进行我们的新功能开发。与此同时，`main`分支已经新进来了两个 `commit`，feature 分之的基础代码已经不是最新的了，此时我们可以在 `feature` 分支上面，进行 `rebase` 操作。
 
 ```shell
-
+git checkout main
+git checkout -b feature
 ```
 
 ![](./01%20What%20is%20git%20rebase.svg)
