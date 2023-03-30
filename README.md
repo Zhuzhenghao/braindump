@@ -206,7 +206,7 @@ Q4.
 4. git checkout -b [your new branch]
 5. git commit -m '[a message]'
 6. git push [your branch]
-7. Create a merge request form your repository to Zhuzhenghao/braindump
+7. Create a pull request form your repository to Zhuzhenghao/braindump
 8. The title of pr can be the same as the commit message
 9. Assign your pr reviewer: /assign_reviewer @user
 
