@@ -19,4 +19,12 @@ echo 'append content' >> reset_lifecycle_file
 git add reset_lifecycle_file
 git status
 git reset --mixed
+git status
+```
+
+## --soft
+
+```shell
+$ git add reset_lifecycle_file
+git status
 ```
