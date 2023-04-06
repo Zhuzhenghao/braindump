@@ -3,3 +3,4 @@ append content
 first
 second
 third
+prepend content to reset_lifecycle_files
