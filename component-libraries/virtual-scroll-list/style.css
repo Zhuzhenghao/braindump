@@ -1,0 +1,184 @@
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.posAbs {
+  position: absolute;
+}
+
+li {
+  width: 100%;
+  list-style-type: none;
+}
+
+.marginRight1rem {
+  margin-right: 1rem;
+}
+
+.paddingLeft0-5rem {
+  padding-left: 0.5rem;
+}
+
+.displayTable {
+  display: table;
+}
+
+.displayTableRow {
+  display: table-row;
+}
+
+.displayTableCell {
+  display: table-cell;
+}
+
+.overlay {
+  top: -999vh;
+  left: -999vw;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,0.35);
+  z-index: 9;
+}
+
+.overlay.visible {
+  top: 0;
+  left: 0;
+}
+
+.setup {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.input-label {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.input-label:before {
+  content: "1";
+  position: absolute;
+  left: -3rem;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  color: #d00;
+  line-height: 2rem;
+  font-weight: 700;
+  transform: translate(0, -50%);
+  border: 2px solid #d00;
+  border-radius: 50%;
+}
+
+.items-input {
+  padding: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.button {
+  left: 0.25rem;
+  width: 11rem;
+  height: 3rem;
+  margin: 1rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.137255) 0px 6px 10px 0px, rgba(0, 0, 0, 0.117647) 0px 1px 18px 0px;
+  color: white;
+}
+
+.generate-button {
+  background: #6FBD43;
+}
+
+.generate-button:before {
+  content: "2";
+  position: absolute;
+  left: -3rem;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  color: #d00;
+  line-height: 2rem;
+  font-weight: 700;
+  transform: translate(0, -50%);
+  border: 2px solid #d00;
+  border-radius: 50%;
+}
+
+.magic-button {
+  background: #00ADEE;
+}
+
+.magic-button:after {
+  content: "3";
+  position: absolute;
+  right: -3rem;
+  top: 50%;
+  width: 2rem;
+  height: 2rem;
+  color: #d00;
+  line-height: 2rem;
+  font-weight: 700;
+  transform: translate(0, -50%);
+  border: 2px solid #d00;
+  border-radius: 50%;
+}
+
+.reset-button {
+  background: #D00;
+}
+
+.container {
+  left: 0;
+  right: 0;
+  margin: 1rem auto 0;
+  width: 760px;
+  height: 220px;
+  box-shadow: 0 1px 8px 0 rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 3px 3px -2px rgba(0,0,0,.12);
+  overflow: auto;
+}
+
+.scroller {
+  width: 1px;
+  background: #900;
+}
+
+.list {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.item {
+  height: 100px;
+  padding: 12px 16px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #555;
+  border: 1px solid grey;
+  will-change: top, transform;
+}
+
+.item:nth-child(2n) {
+  background: #e0e0e0;
+}
+
+.item:hover {
+  background: #F0F0F0;
+}
+
+.listImg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  height: 33px;
+  background-image: url("http://gdurl.com/47vl");
+  background-repeat: no-repeat;
+  background-position: -360px -57px;
+}
