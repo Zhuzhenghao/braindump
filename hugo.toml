@@ -13,8 +13,8 @@ DefaultContentLanguageInSubdir = true
     [languages.zh-cn.params]
       introTitle = "Hey! I'm a happy dog."
       introSubtitle = "This website, 'Frontend Technology', serves as a platform to share insightful articles in the field of frontend development. Our aim is to foster knowledge sharing and collaboration, and to keep our team updated with the latest trends and best practices in frontend technology. Whether you're a seasoned developer or just starting out, we hope you'll find these resources valuable and inspiring."
-      introPhoto = "/intro.png"
-      logo = "/happy-dog.png"
+      introPhoto = "intro.png"
+      logo = "happy-dog.png"
     [[languages.zh-cn.menu.main]]
         name = "Blog"
         url = "blog"
