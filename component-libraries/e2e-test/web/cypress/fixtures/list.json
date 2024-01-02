@@ -1,9 +1,0 @@
-{
-    "message": "success",
-    "code": 0,
-    "result": [
-        {"name": "张三", "sex": 0, "age": 18},
-        {"name": "李四", "sex": 1, "age": 16},
-        {"name": "王二麻子", "sex": 0, "age": 50}
-    ]
-}
