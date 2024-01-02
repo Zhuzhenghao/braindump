@@ -133,7 +133,7 @@ export const sum = (...args) => {
 
 2. 修改配置文件
 
-```js{28-67}
+```js
 // webpack.config.js
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -327,7 +327,7 @@ module.exports = {
 
 最终我们会使用单入口+代码分割+动态导入方式来进行配置。更新之前的配置文件。
 
-```js{174-178}
+```js
 // webpack.prod.js
 const os = require("os");
 const path = require("path");
@@ -564,7 +564,7 @@ npm i eslint-plugin-import -D
 
 - 配置
 
-```js{9}
+```js
 // .eslintrc.js
 module.exports = {
   // 继承 Eslint 规则
@@ -586,7 +586,7 @@ module.exports = {
 
 1. 统一命名配置
 
-```js{36-38,71-78,83-85,132-134}
+```js
 const os = require("os");
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
@@ -832,7 +832,7 @@ npm i @vue/preload-webpack-plugin -D
 
 2. 配置 webpack.prod.js
 
-```js{9,139-143}
+```js
 const os = require("os");
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
@@ -1058,7 +1058,7 @@ module.exports = {
 
 ### 怎么用
 
-```js{37-39,135-136}
+```js
 const os = require("os");
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
@@ -1276,7 +1276,7 @@ module.exports = {
 
 runtime 文件只保存文件的 hash 值和它们与文件关系，整个文件体积就比较小，所以变化重新请求的代价也小。
 
-```js{188-191}
+```js
 const os = require("os");
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
@@ -1499,7 +1499,7 @@ module.exports = {
 
 1. 修改 main.js
 
-```js{15-19}
+```js
 import count from "./js/count";
 import sum from "./js/sum";
 // 引入资源，Webpack才会对其打包
@@ -1533,7 +1533,7 @@ npm i @babel/eslint-parser -D
 
 - .eslintrc.js
 
-```js{4}
+```js
 module.exports = {
   // 继承 Eslint 规则
   extends: ["eslint:recommended"],
@@ -1571,7 +1571,7 @@ npm i core-js
 
 - 手动全部引入
 
-```js{1}
+```js
 import "core-js";
 import count from "./js/count";
 import sum from "./js/sum";
@@ -1598,7 +1598,7 @@ promise.then(() => {
 
 - 手动按需引入
 
-```js{1}
+```js
 import "core-js/es/promise";
 import count from "./js/count";
 import sum from "./js/sum";
@@ -1692,7 +1692,7 @@ npm i workbox-webpack-plugin -D
 
 2. 修改配置文件
 
-```js{10,146-151}
+```js
 const os = require("os");
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
@@ -1900,7 +1900,7 @@ module.exports = {
 
 3. 修改 main.js
 
-```js{24-35}
+```js
 import count from "./js/count";
 import sum from "./js/sum";
 // 引入资源，Webpack才会对其打包

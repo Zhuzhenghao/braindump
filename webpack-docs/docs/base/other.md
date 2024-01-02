@@ -4,7 +4,7 @@
 
 ## 1. 配置
 
-```js{48}
+```js
 const path = require("path");
 
 module.exports = {

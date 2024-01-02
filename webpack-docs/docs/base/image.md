@@ -6,7 +6,7 @@
 
 ## 1. 配置
 
-```js{29-32}
+```js
 const path = require("path");
 
 module.exports = {
@@ -107,7 +107,7 @@ npx webpack
 
 将小于某个大小的图片转化成 data URI 形式（Base64 格式）
 
-```js{32-36}
+```js
 const path = require("path");
 
 module.exports = {

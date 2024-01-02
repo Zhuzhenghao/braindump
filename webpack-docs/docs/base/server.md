@@ -12,7 +12,7 @@ npm i webpack-dev-server -D
 
 - webpack.config.js
 
-```js{74-79}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");

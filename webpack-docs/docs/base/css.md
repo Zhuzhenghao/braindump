@@ -31,7 +31,7 @@ npm i css-loader style-loader -D
 
 ### 3. 配置
 
-```js{11-16}
+```js
 const path = require("path");
 
 module.exports = {
@@ -69,7 +69,7 @@ module.exports = {
 
 - src/main.js
 
-```js{3-4}
+```js
 import count from "./js/count";
 import sum from "./js/sum";
 // 引入 Css 资源，Webpack才会对其打包
@@ -122,7 +122,7 @@ npm i less-loader -D
 
 ### 3. 配置
 
-```js{17-20}
+```js
 const path = require("path");
 
 module.exports = {
@@ -164,7 +164,7 @@ module.exports = {
 
 - src/main.js
 
-```js{5}
+```js
 import count from "./js/count";
 import sum from "./js/sum";
 // 引入资源，Webpack才会对其打包
@@ -177,7 +177,7 @@ console.log(sum(1, 2, 3, 4));
 
 - public/index.html
 
-```html{12}
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -220,7 +220,7 @@ npm i sass-loader sass -D
 
 ### 3. 配置
 
-```js{21-24}
+```js
 const path = require("path");
 
 module.exports = {
@@ -276,7 +276,7 @@ module.exports = {
 
 - src/main.js
 
-```js{6-7}
+```js
 import count from "./js/count";
 import sum from "./js/sum";
 // 引入资源，Webpack才会对其打包
@@ -291,7 +291,7 @@ console.log(sum(1, 2, 3, 4));
 
 - public/index.html
 
-```html{13-14}
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -333,7 +333,7 @@ npm i stylus-loader -D
 
 ### 3. 配置
 
-```js{25-28}
+```js
 const path = require("path");
 
 module.exports = {
@@ -383,7 +383,7 @@ module.exports = {
 
 - src/main.js
 
-```js{9}
+```js
 import { add } from "./math";
 import count from "./js/count";
 import sum from "./js/sum";
@@ -400,7 +400,7 @@ console.log(sum(1, 2, 3, 4));
 
 - public/index.html
 
-```html{16}
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>

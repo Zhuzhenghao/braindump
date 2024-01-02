@@ -18,7 +18,7 @@ npm i mini-css-extract-plugin -D
 
 - webpack.prod.js
 
-```js{4,19,23,27,31,74-78}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -125,7 +125,7 @@ npm i postcss-loader postcss postcss-preset-env -D
 
 - webpack.prod.js
 
-```js{22-31,39-48,57-66,75-84}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -297,7 +297,7 @@ module.exports = {
 
 - webpack.prod.js
 
-```js{6-23,38,42,46,50}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -423,7 +423,7 @@ npm i css-minimizer-webpack-plugin -D
 
 - webpack.prod.js
 
-```js{5,99-100}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");

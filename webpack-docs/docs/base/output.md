@@ -2,7 +2,7 @@
 
 ## 1. 配置
 
-```js{7,37-44}
+```js
 const path = require("path");
 
 module.exports = {
@@ -57,7 +57,7 @@ module.exports = {
 
 ## 2. 修改 index.html
 
-```html{17}
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>

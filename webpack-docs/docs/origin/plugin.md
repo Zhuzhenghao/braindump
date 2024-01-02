@@ -179,7 +179,7 @@ module.exports = TestPlugin;
 
 1. package.json 配置指令
 
-```json{5}
+```json
 {
   "name": "source",
   "version": "1.0.0",

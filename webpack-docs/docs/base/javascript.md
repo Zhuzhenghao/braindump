@@ -140,7 +140,7 @@ module.exports = {
 
 - main.js
 
-```js{11-14}
+```js
 import count from "./js/count";
 import sum from "./js/sum";
 // 引入资源，Webpack才会对其打包
@@ -161,7 +161,7 @@ console.log(result2);
 
 - webpack.config.js
 
-```js{2,58-61}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 
@@ -334,7 +334,7 @@ console.log(result2);
 
 - webpack.config.js
 
-```js{55-59}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 

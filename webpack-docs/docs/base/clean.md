@@ -2,7 +2,7 @@
 
 ## 1. 配置
 
-```js{8}
+```js
 const path = require("path");
 
 module.exports = {

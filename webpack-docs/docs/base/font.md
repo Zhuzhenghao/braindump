@@ -18,7 +18,7 @@
 
 - src/main.js
 
-```js{5}
+```js
 import { add } from "./math";
 import count from "./js/count";
 import sum from "./js/sum";
@@ -36,7 +36,7 @@ console.log(sum(1, 2, 3, 4));
 
 - public/index.html
 
-```html{16-19}
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -63,7 +63,7 @@ console.log(sum(1, 2, 3, 4));
 
 ## 3. 配置
 
-```js{47-53}
+```js
 const path = require("path");
 
 module.exports = {

@@ -591,7 +591,7 @@ module.exports = {
 
 - 修改运行指令 package.json
 
-```json{8-9}
+```json
 {
   "name": "react-cli",
   "version": "1.0.0",
@@ -643,7 +643,7 @@ module.exports = {
 
 ## 优化配置
 
-```js{27-42,189-219,238}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");

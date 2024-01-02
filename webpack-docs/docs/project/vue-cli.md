@@ -627,7 +627,7 @@ module.exports = {
 
 ## 优化配置
 
-```js{11-13,29-38,151-161,199-229,237-240,252}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");

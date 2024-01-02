@@ -10,7 +10,7 @@ npm i html-webpack-plugin -D
 
 - webpack.config.js
 
-```js{3,68-72}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");

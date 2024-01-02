@@ -34,7 +34,7 @@
 
 因为文件目录变了，所以所有绝对路径需要回退一层目录才能找到对应的文件
 
-```js{8,10,66,71}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -126,7 +126,7 @@ npx webpack serve --config ./config/webpack.dev.js
 
 ### 3. 修改 webpack.prod.js
 
-```js{8,74-79}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");

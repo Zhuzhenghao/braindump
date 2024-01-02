@@ -44,7 +44,7 @@ npm i @babel/plugin-transform-runtime -D
 
 2. 配置
 
-```js{100}
+```js
 const os = require("os");
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
@@ -241,7 +241,7 @@ npm install imagemin-gifsicle imagemin-mozjpeg imagemin-pngquant imagemin-svgo -
 
 我们以无损压缩配置为例：
 
-```js{8,144-171}
+```js
 const os = require("os");
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");

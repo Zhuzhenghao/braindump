@@ -33,7 +33,7 @@ module.exports = {
 
 2. JS 配置
 
-```js{17-28}
+```js
 // main.js
 import count from "./js/count";
 import sum from "./js/sum";
@@ -192,7 +192,7 @@ module.exports = {
 
 ### 怎么用
 
-```js{60-61,72}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -300,7 +300,7 @@ module.exports = {
 
 ### 怎么用
 
-```js{63-66,77-82}
+```js
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -441,7 +441,7 @@ npm i thread-loader -D
 
 3. 使用
 
-```js{1,7,9-10,88-101,118,131,133-143}
+```js
 const os = require("os");
 const path = require("path");
 const ESLintWebpackPlugin = require("eslint-webpack-plugin");
