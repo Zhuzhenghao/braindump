@@ -1,4 +1,4 @@
-baseurl = "https://blist.vercel.app"
+baseurl = "https://zhuzhenghao.github.io/braindump"
 metaDataFormat = "yaml"
 title = "ATS 前端技术"
 theme = "blist"
