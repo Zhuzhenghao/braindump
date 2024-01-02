@@ -90,7 +90,7 @@ module.exports = {
           // 开启缓存
           cacheDirectory: path.resolve(
             __dirname,
-            "node_modules/.cache/vue-loader"
+            "node_modules/.cache/vue-loader",
           ),
         },
       },
@@ -103,7 +103,7 @@ module.exports = {
       cache: true,
       cacheLocation: path.resolve(
         __dirname,
-        "../node_modules/.cache/.eslintcache"
+        "../node_modules/.cache/.eslintcache",
       ),
     }),
     new HtmlWebpackPlugin({
@@ -250,7 +250,7 @@ module.exports = {
           // 开启缓存
           cacheDirectory: path.resolve(
             __dirname,
-            "node_modules/.cache/vue-loader"
+            "node_modules/.cache/vue-loader",
           ),
         },
       },
@@ -263,7 +263,7 @@ module.exports = {
       cache: true,
       cacheLocation: path.resolve(
         __dirname,
-        "../node_modules/.cache/.eslintcache"
+        "../node_modules/.cache/.eslintcache",
       ),
     }),
     new HtmlWebpackPlugin({
@@ -522,7 +522,7 @@ module.exports = {
           // 开启缓存
           cacheDirectory: path.resolve(
             __dirname,
-            "node_modules/.cache/vue-loader"
+            "node_modules/.cache/vue-loader",
           ),
         },
       },
@@ -535,7 +535,7 @@ module.exports = {
       cache: true,
       cacheLocation: path.resolve(
         __dirname,
-        "../node_modules/.cache/.eslintcache"
+        "../node_modules/.cache/.eslintcache",
       ),
     }),
     new HtmlWebpackPlugin({

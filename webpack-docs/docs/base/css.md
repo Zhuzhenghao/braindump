@@ -82,7 +82,7 @@ console.log(sum(1, 2, 3, 4));
 - public/index.html
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -375,9 +375,9 @@ module.exports = {
 
 ```css
 /* 可以省略大括号、分号、冒号 */
-.box 
-  width 100px 
-  height 100px 
+.box
+  width 100px
+  height 100px
   background-color pink
 ```
 

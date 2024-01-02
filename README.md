@@ -6,129 +6,9 @@
 
 | 小组   | 组长   | 成员             | 目标 |
 | ------ | ------ | ---------------- | ---- |
-| 微前端 | 李艳   | 姚若尘 张雯      |      |
+| 微前端 | 李艳   | 姚若尘           |      |
 | 组件库 | 张鹏胜 | 范弘琰           |      |
 | 工具库 | 孙国斌 | 司琴 朱正浩 张茜 |      |
-
-### 微前端
-
-Q1:
-
-- [ ] 张雯: 微前端的优缺点（文章）
-- [ ] 姚若尘: 微前端的方案（文章）
-- [ ] 李艳: 微前端应用间通信（文章+Demo）
-
-Q2.
-
-- [ ] 张雯: 微前端 qiankun 实战——搭建基座应用（文章+Demo）
-- [ ] 姚若尘: qiankun 预加载与缓存（文章+Demo）
-- [ ] 李艳: 微前端路由管理（文章+Demo）
-
-Q3.
-
-- [ ] 姚若尘: qiankun 源码分析——沙箱隔离（Demo）
-- [ ] 张雯: [qiankun](https://qiankun.umijs.org/) 微前端应用加载实现原理（Demo）
-- [ ] 李艳: 微前端的权限管理（Demo）
-
-Q4.
-
-- [ ] 姚若尘: 微前端框架之 single-spa（文章+Demo）
-- [ ] 张雯: 微前端 [micro-app](https://micro-zoe.github.io/micro-app/) 实战（Demo）
-- [ ] 李艳: 微前端的性能优化（文章+Demo）
-
-### 组件库
-
-1. 张鹏胜
-
-   - [ ] 组件库单元测试实战
-   - [ ] 组件库 e2e 测试
-   - [ ] 组件库自动化（Gitlab Action）发布 NPM
-   - [ ]
-
-2. 范弘琰
-   - [ ] 组件库主题的切换
-     - 主题可定制化
-     - 生成主题 CSS
-   - [ ] 组件库国际化
-   - [ ] 组件库 CSS 相关
-     - 工具函数
-     - SASS
-     - color-mix()
-     - color-contrast()
-   - [ ] tailwindcss
-
-### 工具库
-
-1. Kubernetes **朱正浩**
-
-   - [ ] Kubernetes 部分资源对象实战
-     - Pod
-     - Deployment
-     - Service
-     - ConfigMap
-     - \* 编写 YAML 部署微前端，结合 GitOps
-   - [x] Docker
-     - Docker Buildx (可指定平台的枚举值)
-     - Docker 进阶
-     - exec、attach、log、docker compose
-     - Install vim inside Ningx container
-   - [ ] What's gRPC?
-     - gRPC 封装前端网络请求
-     - 用 protoc 编译 go 文件成 ts 文件，包含类型和远程调用方法
-
-2. CICD **孙国斌**
-
-   - [ ] Jenkins
-     - Jenkins 配置
-     - 创建任务
-     - 配置 Git hooks
-     - 实现自动化构建流程
-     - 实现自动化部署流程
-   - [ ] CI/CD 管道
-     - 阶段
-     - 模式
-     - Workflow
-   - [ ] CICD 流水线
-
-3. Git **朱正浩**
-
-   - [ ] Git 高级特性
-     - Git rebase
-     - Git stash
-     - Git diff
-     - Git reset
-     - [常用命令](https://github.com/Zhuzhenghao/git-tips)
-   - [ ] Git 规范
-     - 分支
-     - commit
-     - PR
-     - issue/feature/bug Templates
-     - Git hooks
-     - tag、Release
-   - [ ] [GitHub Actions](https://docs.github.com/en/actions)
-   - \*[Gitlab Job](https://gitlab.daocloud.cn/help/ci/examples/index)
-
-4. Nginx **张茜**
-
-   - [ ] Nginx 配置及应用
-     - 静态资源代理
-     - 反向代理
-     - 高级配置
-       - websocket
-       - http2
-     - 跨域
-   - [ ] 负载均衡
-     - 轮询
-     - 加权轮询
-     - IP 哈希
-     - 其他算法
-     - 应用场景
-   - [ ] Linux 命令
-     - 常用命令 ls、rm、tail、cd
-     - 文件命令 touch、which、cp、cat、grep、find、curl
-     - 目录命令 pwd、mkdir、rmdir
-     - 进程 kill、ps、top
-     - 其他 mv、ping、telnet、管道｜、clear、alias
 
 ## 周会计划
 
@@ -147,24 +27,24 @@ Q4.
 | ✅  | 6.8   | Nginx 配置及应用                                               | 张茜      |
 | ✅  | 6.20  | 组件库主题的切换                                               | 范弘琰    |
 | 🙈  | 6.27  |                                                                |           |
-| 🕑  | 7.4   | 微前端应用间通信                                               | 李艳      |
-| 🕑  | 7.18  | Kubernetes 部分资源对象实战                                    | 朱正浩    |
+| ✅  | 7.4   | 微前端应用间通信                                               | 李艳      |
+| ✅  | 7.18  | Kubernetes 部分资源对象实战                                    | 朱正浩    |
 | 🙈  | 7.25  |                                                                | 李艳      |
-| 🕑  | 8.1   | [尚硅谷 Webpack5 入门到原理][1]                                | P1-P6     |
-| 🕑  | 8.15  | [尚硅谷 Webpack5 入门到原理][2]                                | P7 - P12  |
+| ✅  | 8.1   | [尚硅谷 Webpack5 入门到原理][1]                                | P1-P6     |
+| ✅  | 8.15  | [尚硅谷 Webpack5 入门到原理][2]                                | P7 - P12  |
 | 🙈  | 8.29  |                                                                | 张鹏胜    |
-| 🕑  | 9.5   | Git 规范                                                       | 朱正浩    |
-| 🕑  | 9.19  | 组件库 e2e 测试                                                | 张鹏胜    |
+| ❌  | 9.5   | Git 规范                                                       | 朱正浩    |
+| ✅  | 9.19  | 组件库 e2e 测试                                                | 张鹏胜    |
 | 🙈  | 9.26  |                                                                | 司琴      |
-| 🕑  | 10.10 | 前端跨端方案                                                   | 司琴      |
-| 🕑  | 10.24 | CI/CD 管道                                                     | 孙国斌    |
+| ✅  | 10.10 | 前端跨端方案                                                   | 司琴      |
+| ❌  | 10.24 | CI/CD 管道                                                     | 孙国斌    |
 | 🙈  | 10.31 |                                                                | 姚若尘    |
-| 🕑  | 11.7  | [尚硅谷 Webpack5 入门到原理][3]                                | P13 - P19 |
-| 🕑  | 11.21 | 微前端路由管理                                                 | 李艳      |
+| ✅  | 11.7  | [尚硅谷 Webpack5 入门到原理][3]                                | P13 - P19 |
+| ✅  | 11.21 | 微前端路由管理                                                 | 李艳      |
 | 🙈  | 11.28 |                                                                | 李艳      |
 | 🕑  | 12.5  | [尚硅谷 Webpack5 入门到原理][4]                                | P20 - P26 |
-| 🕑  | 12.12  | WASM                             | 朱正浩 |
-| 🕑  | 12.19 | 微前端框架之 single-spa                                        | 姚若尘    |
+| ✅  | 12.12 | WASM                                                           | 朱正浩    |
+| ✅  | 12.19 | 微前端框架之 single-spa                                        | 姚若尘    |
 | 🙈  | 12.26 |                                                                | 孙国斌    |
 | 🕑  | 1.9   | [What's gRPC?](./tool-libraries/gRPC/README.md)                | 司琴      |
 | 🕑  | 1.23  | [尚硅谷 Webpack5 入门到原理][5]                                | P27 - P33 |
@@ -200,16 +80,13 @@ Q4.
 | 🕑  | 11.12 | 监控系统「错误监控、性能监控、网络以及资源监控、用户行为监控」 | 司琴      |
 | 🙈  | 11.26 |                                                                | 司琴      |
 
-| 待定 |     |                                   |        |
-| ---- | --- | --------------------------------- | ------ |
-| 🕑   |     | 组件库国际化                      | 范弘琰 |
-| 🕑   |     | 组件库 CSS 相关                   | 范弘琰 |
-| 🕑   |     | tailwindcss                       | 范弘琰 |
-| 🕑   |     | 微前端 qiankun 实战——搭建基座应用 | 张雯   |
-| 🕑   |     | 乾坤微前端应用加载实现原理        | 张雯   |
-| 🕑   |     | 微前端 micro-app 实战             | 张雯   |
-| 🕑   |     | Nginx 负载均衡                    | 张茜   |
-| 🕑   |     | Linux 命令                        | 张茜   |
+| 待定 |     |                 |        |
+| ---- | --- | --------------- | ------ |
+| 🕑   |     | 组件库国际化    | 范弘琰 |
+| 🕑   |     | 组件库 CSS 相关 | 范弘琰 |
+| 🕑   |     | tailwindcss     | 范弘琰 |
+| 🕑   |     | Nginx 负载均衡  | 张茜   |
+| 🕑   |     | Linux 命令      | 张茜   |
 
 ## 一些约定
 
@@ -244,7 +121,6 @@ Q4.
 
 - [ ] 添加 Markdown lint
 - [ ] GitBook
-- [ ] Git Ignore
 
 ## 引用
 

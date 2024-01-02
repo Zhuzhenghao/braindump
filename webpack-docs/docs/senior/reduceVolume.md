@@ -445,4 +445,3 @@ Error with 'src\images\3.gif': spawn C:\Users\86176\Desktop\webpack\webpack_code
 需要复制到 `node_modules\optipng-bin\vendor` 下面
 
 > [OptiPNG 官网地址](http://optipng.sourceforge.net/)
-

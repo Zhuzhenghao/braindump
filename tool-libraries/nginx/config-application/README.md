@@ -374,8 +374,7 @@ server {
 
 （`转发代理位于客户端的前面`，确保没有源站直接与该特定客户端通信；而`反向代理服务器位于源站前面`，确保没有客户端直接与该源站通信。）
 
-
-***
+---
 
 ### 2. 反向代理 Reverse Proxy（http 反向代理/服务转发）
 
@@ -478,10 +477,9 @@ http {
 
 根据访问的路径跳转到不同端口的服务中，Nginx 监听端口为 80
 
->访问http://localhost:8081/document/ 直接跳转到 127.0.0.1:82
+> 访问http://localhost:8081/document/ 直接跳转到 127.0.0.1:82
 >
->访问http://localhost:8081/education/ 直接跳转到 127.0.0.1:83
-
+> 访问http://localhost:8081/education/ 直接跳转到 127.0.0.1:83
 
 第一步，需要准备两个代理镜像，一个 82 端口，一个 83 端口，并准备好测试的页面
 
@@ -533,7 +531,7 @@ http {
 
 ---
 
-***
+---
 
 ### nginx配置
 
@@ -632,7 +630,7 @@ location 匹配命令解释：
 
 具体 location 匹配顺序见[引用链接 🔗](https://segmentfault.com/a/1190000022315733) 。
 
-***
+---
 
 ### 3.高级配置
 
@@ -988,7 +986,7 @@ docker run -it -v /Users/zhangqian/Desktop/frontEnd/cert.pem:/ssl/cert.pem -v /U
 
 > 注：这里可能会出现的问题，如果是自签名的证书，在 chrome 默认的安全环境中会认为这个证书是无效的，还需要将该证书加入证书的信任链中。
 
-***
+---
 
 ### 4. 跨域
 
@@ -1008,8 +1006,6 @@ docker run -it -v /Users/zhangqian/Desktop/frontEnd/cert.pem:/ssl/cert.pem -v /U
 - 通过配置 header方式解决跨域（CORS跨域） ;
 - 通过反向代理 ;
 
-
-
 priflight 说明是个预请求，CORS 机制跨域会首先进行 preflight（一个 OPTIONS 请求)， 该请求成功后才会发送真正的请求。 这一设计旨在确保服务器对 CORS 标准知情，以保护不支持 CORS 的旧服务器。
 
 ![img](./imgs/image-20230604202839858.png)
@@ -1024,8 +1020,6 @@ priflight 说明是个预请求，CORS 机制跨域会首先进行 preflight（�
 >
 > Access-Control-Allow-Credentials 是否允许跨域使用 cookies，如果要跨域使用 cookies，可以添加上此请求响应头，值设为 true（设置或者不设置，都不会影响请求发送，只会影响在跨域时候是否要携带 cookies，但是如果设置，预检请求和正式请求都需要设置）。不过不建议跨域使用（项目中用到过，不过不稳定，有些浏览器带不过去），除非必要，因为有很多方案可以代替。
 
-
-
 #### **4.2 nginx跨域-实战**
 
 **1）启动一个Nginx84镜像来测试**：
@@ -1039,11 +1033,11 @@ docker run -di --name=nginx84 -p 84:80 -v /Users/zhangqian/Desktop/frontEnd/8084
 **2）在nginx.conf中配置如下请求头**：
 
 ```
-location / {	
+location / {
 	 	 add_header Access-Control-Allow-Origin $http_origin;
   	 add_header Access-Control-Allow-Headers '*';
   	 add_header Access-Control-Allow-Methods '*';
-  	 add_header Access-Control-Allow-Credentials 'true';	   
+  	 add_header Access-Control-Allow-Credentials 'true';
 
 	   root   /usr/share/nginx/html;
            index  index.html index.htm;
@@ -1056,12 +1050,12 @@ location / {
 // GET
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
-xhr.open('GET', 'http://localhost:84/');
+xhr.open("GET", "http://localhost:84/");
 xhr.send(null);
-xhr.onload = function(e) {
-    var xhr = e.target;
-    console.log(xhr.responseText);
-}
+xhr.onload = function (e) {
+  var xhr = e.target;
+  console.log(xhr.responseText);
+};
 ```
 
 **4）测试**：

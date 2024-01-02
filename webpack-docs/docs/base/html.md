@@ -93,7 +93,7 @@ module.exports = {
 去掉引入的 js 文件，因为 HtmlWebpackPlugin 会自动引入
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />

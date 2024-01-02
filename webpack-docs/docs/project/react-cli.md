@@ -95,7 +95,7 @@ module.exports = {
       cache: true,
       cacheLocation: path.resolve(
         __dirname,
-        "../node_modules/.cache/.eslintcache"
+        "../node_modules/.cache/.eslintcache",
       ),
     }),
     new HtmlWebpackPlugin({
@@ -244,7 +244,7 @@ module.exports = {
       cache: true,
       cacheLocation: path.resolve(
         __dirname,
-        "../node_modules/.cache/.eslintcache"
+        "../node_modules/.cache/.eslintcache",
       ),
     }),
     new HtmlWebpackPlugin({
@@ -514,7 +514,7 @@ module.exports = {
       cache: true,
       cacheLocation: path.resolve(
         __dirname,
-        "../node_modules/.cache/.eslintcache"
+        "../node_modules/.cache/.eslintcache",
       ),
     }),
     new HtmlWebpackPlugin({
