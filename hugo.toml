@@ -3,36 +3,38 @@ metaDataFormat = "yaml"
 title = "ATS 前端技术"
 theme = "blist"
 
-DefaultContentLanguage = "zh-cn"
+DefaultContentLanguage = "zh-CN"
 DefaultContentLanguageInSubdir = true
+
 [languages]
-  [languages.zh-cn]
-    contentDir = "content/zh-cn" #Chinese
+  [languages.zh-CN]
+    contentDir = "content/zh-CN" #Chinese
     weight = 1
-    languageName = "中文"
-    [languages.zh-cn.params]
+    LanguageCode = "zh-CN"
+    LanguageName = "中文"
+    [languages.zh-CN.params]
       introTitle = "Hey! I'm a happy dog."
       introSubtitle = "This website, 'Frontend Technology', serves as a platform to share insightful articles in the field of frontend development. Our aim is to foster knowledge sharing and collaboration, and to keep our team updated with the latest trends and best practices in frontend technology. Whether you're a seasoned developer or just starting out, we hope you'll find these resources valuable and inspiring."
       introPhoto = "intro.png"
       logo = "happy-dog.png"
-    [[languages.zh-cn.menu.main]]
+    [[languages.zh-CN.menu.main]]
         name = "Blog"
         url = "blog"
         weight = 1
 
-    [[languages.zh-cn.menu.main]]
+    [[languages.zh-CN.menu.main]]
         name = "About"
         url = "page/about/"
         weight = 2
 
-    [[languages.zh-cn.menu.main]]
+    [[languages.zh-CN.menu.main]]
         name = "Tags"
         url = "tags"
         weight = 3
 
-    [[languages.zh-cn.menu.main]]
+    [[languages.zh-CN.menu.main]]
         name = "Top Post"
-        url = "/zh-cn/blog/emoji-support/"
+        url = "blog/emoji-support/"
         weight = 4
 
 [params]
@@ -92,16 +94,16 @@ DefaultContentLanguageInSubdir = true
   system = "giscus"
 
   # Options for giscus, exclude hyphens
-  repo = ""
-  repoid = ""
-  category = ""
-  categoryid = ""
-  mapping = ""
-  strict = ""
-  reactionsenabled = ""
-  emitmetadata = ""
-  inputposition = ""
-  theme = ""
+  repo = "Zhuzhenghao/braindump"
+  repoid = "R_kgDOJGwA9g"
+  category = "General"
+  categoryid = "DIC_kwDOJGwA9s4CcJvm"
+  mapping = "pathname"
+  strict = "0"
+  reactionsenabled = "1"
+  emitmetadata = "0"
+  inputposition = "bottom"
+  theme = "preferred_color_scheme"
 
   # Options for utterances, exclude hyphens
   # repo = ""

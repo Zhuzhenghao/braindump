@@ -1,10 +1,10 @@
 ---
-author: "Hugo Authors"
-title: WebAssembly (WASM) Presentation
+author: "Zhuzhenghao"
+title: WebAssembly | A Beginner's Guide
 date: 2021-07-13
 description: "Lorem Ipsum Dolor Si Amet"
 tags: ["markdown", "text"]
-thumbnail: /blog-post.jpg
+thumbnail: wasm.png
 ---
 
 ## Introduction
