@@ -3,36 +3,36 @@ metaDataFormat = "yaml"
 title = "ATS 前端技术"
 theme = "blist"
 
-DefaultContentLanguage = "zh-CN"
+DefaultContentLanguage = "zh-cn"
 DefaultContentLanguageInSubdir = true
 
 [languages]
-  [languages.zh-CN]
-    contentDir = "content/zh-CN" #Chinese
+  [languages.zh-cn]
+    contentDir = "content/zh-cn" #Chinese
     weight = 1
     LanguageCode = "zh-CN"
     LanguageName = "中文"
-    [languages.zh-CN.params]
+    [languages.zh-cn.params]
       introTitle = "Hey! I'm a happy dog."
       introSubtitle = "This website, 'Frontend Technology', serves as a platform to share insightful articles in the field of frontend development. Our aim is to foster knowledge sharing and collaboration, and to keep our team updated with the latest trends and best practices in frontend technology. Whether you're a seasoned developer or just starting out, we hope you'll find these resources valuable and inspiring."
       introPhoto = "intro.png"
       logo = "happy-dog.png"
-    [[languages.zh-CN.menu.main]]
+    [[languages.zh-cn.menu.main]]
         name = "Blog"
         url = "blog"
         weight = 1
 
-    [[languages.zh-CN.menu.main]]
+    [[languages.zh-cn.menu.main]]
         name = "About"
         url = "page/about/"
         weight = 2
 
-    [[languages.zh-CN.menu.main]]
+    [[languages.zh-cn.menu.main]]
         name = "Tags"
         url = "tags"
         weight = 3
 
-    [[languages.zh-CN.menu.main]]
+    [[languages.zh-cn.menu.main]]
         name = "Top Post"
         url = "blog/emoji-support/"
         weight = 4
