@@ -1,3 +1,12 @@
+---
+author: "Hugo Authors"
+title: gRPC-Web 分享
+date: 2021-07-13
+description: "test"
+tags: ["markdown", "text"]
+thumbnail: /blog-post.jpg
+---
+
 # gRPC-Web 分享
 
 Demo: 如何使用 proto 生成 golang 代码以及 typescripts 代码
