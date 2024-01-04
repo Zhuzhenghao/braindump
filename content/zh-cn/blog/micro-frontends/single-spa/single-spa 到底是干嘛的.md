@@ -1,3 +1,12 @@
+---
+author: "RuoChen Yao"
+title: single-spa
+date: 2023-12-19
+description: "single-spa接入demo"
+tags: ["markdown", "text"]
+math: true
+---
+
 ## single-spa 到底是干嘛的
 
 **single-spa 仅仅是一个子应用生命周期的调度者。** single-spa 为应用定义了 boostrap, load, mount, unmount 四个生命周期回调
