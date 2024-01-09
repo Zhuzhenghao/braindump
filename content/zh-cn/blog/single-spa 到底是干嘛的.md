@@ -1,10 +1,10 @@
 ---
-author: "RuoChen Yao"
+author: 'RuoChen Yao'
 title: single-spa
 date: 2023-12-19
-description: "single-spa接入demo"
-tags: ["markdown", "text"]
-math: true
+description: 'single-spa接入demo'
+tags: ['qianduan', 'single-spa']
+thumbnail: https://picsum.photos/id/120/800/400
 ---
 
 ## single-spa 到底是干嘛的
@@ -13,13 +13,13 @@ math: true
 
 只要写过 SPA 的人都能理解，无非就是生、老、病、死。不过有几个点需要注意一下：
 
-- Register 不是生命周期，指的是调用 `registerApplication` 函数这一步
+- Register 不是生命周期，指的是调用  `registerApplication`  函数这一步
 - Load 是开始加载子应用，怎么加载由开发者自己实现（等会会说到）
-- Unload 钩子只能通过调用 `unloadApplication` 函数才会被调用
+- Unload 钩子只能通过调用  `unloadApplication`  函数才会被调用
 
 OK，上面 4 个生命周期的回调顺序是 single-spa 可以控制的，我能理解，那什么时候应该开始这一套生命周期呢？应该是有一个契机来开始整套流程的，或者某几个流程的。
 
-契机就是当 `window.location.href` 匹配到 url 时，开始走对应子 App 的这一套生命周期嘛。所以，single-spa 还要监听 url 的变化，然后执行子 app 的生命周期流程。
+契机就是当  `window.location.href`  匹配到 url 时，开始走对应子 App 的这一套生命周期嘛。所以，single-spa 还要监听 url 的变化，然后执行子 app 的生命周期流程。
 
 到此，我们就有了 single-spa 的大致框架了，无非就两件事：
 
@@ -36,12 +36,11 @@ OK，上面 4 个生命周期的回调顺序是 single-spa 可以控制的，我
 
 `vue create spa-vue`
 
- `npm install single-spa-vue`
+`npm install single-spa-vue`
 
-2. 修改main.js
+2. 修改 main.js
 
-```
-`
+```js
 import singleSpaVue from 'single-spa-vue';
 const vueOption = {
 
@@ -73,15 +72,11 @@ export const  mount = vueLifecycles.mount
 
 export const  unmount = vueLifecycles.unmount
 
-`
-
 ```
-
-
 
 3.配置子路由基础路径
 
-```
+```js
 const router = new VueRouter({
   mode: 'history',
   base: '/vue',
@@ -89,13 +84,11 @@ const router = new VueRouter({
 })
 ```
 
-页面路由匹配到/vue就会去加载这个子应用
-
-
+页面路由匹配到/vue 就会去加载这个子应用
 
 4.将子模块打包成类库，方便加载
 
-```
+```js
 module.exports = {
     // css在所有环境下，都不单独打包为文件。这样是为了保证最小引入（只引入js）
     // css: {
@@ -112,16 +105,16 @@ module.exports = {
             port: 10000,
         }
     },
-   
+
 }
 
 ```
 
 ### 构建主应用
 
-1.构建路由和价值root
+1.构建路由和价值 root
 
-```
+```html
 <template>
   <div id="app">
     <router-link to="/vue">加载vue应用</router-link>
@@ -133,7 +126,7 @@ module.exports = {
 
 2.主应用注册子应用
 
-```
+```js
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -151,7 +144,7 @@ async function loadScript(url){
     script.onload = resolve;
     script.onerror = reject;
     document.head.appendChild(script)
-    
+
 });
 }
 
@@ -161,13 +154,13 @@ async function loadScript(url){
 //name,promise,active,e
 registerApplication('myVueApp',
   async () => {
-    
+
       console.log("🚀 ~ file: main.js:14 ~ :", '加载了模块')
       await loadScript(`http://localhost:10000/js/chunk-vendors.js`)
       await loadScript(`http://localhost:10000/js/app.js`)
       return window.singleVue   //bootstrap  mount  unmount 函数
     },
-    
+
     location => location.pathname.startsWith('/vue') // 用户切换到/vue的路径下我需要加载定义的子应用
 
 )
@@ -181,7 +174,7 @@ new Vue({
 
 3.解决资源问题，动态设置子应用`publicPath`
 
-```
+```js
 //如果是父应用引用我
 
 if(window.singleSpaNavigate){
