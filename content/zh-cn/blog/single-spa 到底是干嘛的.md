@@ -194,10 +194,4 @@ if(!window.singleSpaNavigate){
 }
 ```
 
-### 效果展示
 
-![](C:\Users\OS\AppData\Roaming\marktext\images\2023-12-16-19-27-08-image.png)
-
-![](C:\Users\OS\AppData\Roaming\marktext\images\2023-12-16-19-27-37-image.png)
-
-![](C:\Users\OS\AppData\Roaming\marktext\images\2023-12-16-19-27-53-image.png)
