@@ -4,7 +4,7 @@ title: Git stash
 date: 2021-07-13
 description: "Lorem Ipsum Dolor Si Amet"
 tags: ["markdown", "text"]
-thumbnail: /blog-post.jpg
+thumbnail: https://picsum.photos/id/114/800/400
 ---
 
 ## Stashing your work

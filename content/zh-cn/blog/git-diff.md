@@ -4,7 +4,7 @@ title: Git diff
 date: 2021-07-13
 description: "Lorem Ipsum Dolor Si Amet"
 tags: ["markdown", "text"]
-thumbnail: /blog-post.jpg
+thumbnail: https://picsum.photos/id/115/800/400
 ---
 
 ## Reading diffs: output
