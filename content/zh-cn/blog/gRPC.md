@@ -4,7 +4,7 @@ title: gRPC-Web 分享
 date: 2021-07-13
 description: "test"
 tags: ["markdown", "text"]
-thumbnail: /blog-post.jpg
+thumbnail: https://picsum.photos/id/140/800/400
 ---
 
 # gRPC-Web 分享

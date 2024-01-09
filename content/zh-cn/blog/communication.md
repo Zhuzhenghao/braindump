@@ -1,10 +1,9 @@
 ---
-author: Hugo Authors
+author: 李艳
 title: 微前端应用间通信
 date: 2021-07-14
-description: A brief guide to setup KaTeX
-math: true
-thumbnail: https://picsum.photos/id/1015/400/250
+description: 
+thumbnail: https://picsum.photos/id/16/800/400
 ---
 
 微前端是一种将前端应用程序拆分为多个小型独立部分的架构模式。在微前端架构中，不同的前端应用程序可以由不同的团队开发和维护，并且可以独立部署。应用程序之间的通信是微前端中一个重要的问题，以下是几种常见的微前端应用间通信方式
@@ -22,20 +21,20 @@ thumbnail: https://picsum.photos/id/1015/400/250
 ### 使用
 
 qiankun 内部提供了 initGlobalState 方法
-![](./picture5.png)
+![](images/communication/picture5.png)
 
 该实例有三个方法，分别是：
 
 - setGlobalState：设置 globalState - 设置新的值时，内部将执行 浅检查，如果检查到 globalState 发生改变则触发通知，通知到所有的 观察者 函数。
-  ![](./picture6.png)
+  ![](images/communication/picture6.png)
 
 - onGlobalStateChange：注册 观察者 函数 - 响应 globalState 变化，在 globalState 发生改变时触发该 观察者 函数。
-  ![](./picture7.png)
+  ![](images/communication/picture7.png)
 
 - offGlobalStateChange：取消 观察者 函数 - 该实例不再响应 globalState 变化。
-  ![](./picture8.png)
+  ![](images/communication/picture8.png)
 
-![](./picture9.png)
+![](images/communication/picture9.png)
 我们从上图可以看出，我们可以先注册 观察者 到观察者池中，然后通过修改 globalState 可以触发所有的 观察者 函数，从而达到组件间通信的效果。
 
 ### 优缺点
@@ -67,13 +66,13 @@ qiankun 内部提供了 initGlobalState 方法
 ## wex通信
 
 示例: 主控台切换租户，通知其他子应用
-![](./picture1.png)
+![](images/communication/picture1.png)
 Wex注册 src/store/wex.js
-![](./picture2.png)
+![](images/communication/picture2.png)
 子应用监听
-![](./picture3.png)
+![](images/communication/picture3.png)
 子应用卸载
-![](./picture4.png)
+![](images/communication/picture4.png)
 
 ## cookie数据共享
 

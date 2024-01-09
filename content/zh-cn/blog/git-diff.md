@@ -2,8 +2,8 @@
 author: "Hugo Authors"
 title: Git diff
 date: 2021-07-13
-description: "Lorem Ipsum Dolor Si Amet"
-tags: ["markdown", "text"]
+description: git diff 是一个 Git 命令，用于显示 Git 仓库中的更改。它可以比较工作目录、暂存区和提交之间的差异，帮助你了解自上次提交以来你做了哪些修改。
+tags: ["Git"]
 thumbnail: https://picsum.photos/id/115/800/400
 ---
 

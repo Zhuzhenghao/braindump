@@ -4,7 +4,7 @@ title: '什么是 e2e 测试'
 date: 2021-07-15
 description: 'Guide to emoji usage in Hugo'
 tags: ['emoji']
-thumbnail: https://picsum.photos/id/1050/400/250
+thumbnail: https://picsum.photos/id/12/800/400
 ---
 
 其实 e2e 测试是自动化测试的一种，他是将程序当作一个黑盒子，以用户的视角对真实系统的访问行为进行仿真，对测试的输入（用户行为/模拟数据），看能否得到预期得到的结果。

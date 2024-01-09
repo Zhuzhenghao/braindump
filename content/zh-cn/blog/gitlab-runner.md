@@ -1,10 +1,10 @@
 ---
 author: "Hugo Authors"
-title: CI/CD process overview
+title: Gitlab runners
 date: 2021-07-13
 description: "Lorem Ipsum Dolor Si Amet"
-tags: ["markdown", "text"]
-thumbnail: /blog-post.jpg
+tags: ["gitlab", "runner"]
+thumbnail: https://picsum.photos/id/140/800/400
 ---
 
 ## 清单
@@ -43,7 +43,7 @@ thumbnail: /blog-post.jpg
 
 2. 请输入您的 GitLab 实例 URL（也称为 gitlab-ci 协调器 URL）。
 
-   ![获取 URL 和 token](2023-05-12-10-26-42.png)
+   ![获取 URL 和 token](images/gitlab/2023-05-12-10-26-42.png)
 
 3. 输入您获取以注册 runner 的 token。
 4. 为 runner 输入一个描述。您可以稍后在 GitLab 用户界面中更改此值。
@@ -78,7 +78,7 @@ sudo gitlab-runner register \
 
 - Settings > CI/CD，展开 Runners。
 
-  ![runners](2023-05-12-11-29-24.png)
+  ![runners](images/gitlab/2023-05-12-11-29-24.png)
 
 ## 创建 `.gitlab-ci.yml`
 
@@ -117,7 +117,7 @@ EOF
 
 - CI/CD > Pipelines
 
-![pipeline and jobs](2023-05-12-13-36-44.png)
+![pipeline and jobs](images/gitlab/2023-05-12-13-36-44.png)
 
 ### 配置 .gitlab-ci.yml
 

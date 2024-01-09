@@ -2,8 +2,8 @@
 author: "Hugo Authors"
 title: Git stash
 date: 2021-07-13
-description: "Lorem Ipsum Dolor Si Amet"
-tags: ["markdown", "text"]
+description: 
+tags: ["Git"]
 thumbnail: https://picsum.photos/id/114/800/400
 ---
 

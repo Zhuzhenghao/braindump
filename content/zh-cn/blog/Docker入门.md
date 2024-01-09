@@ -1,10 +1,10 @@
 ---
-author: "Hugo Authors"
+author: 于莉
 title: Docker 入门
 date: 2021-07-13
-description: "Lorem Ipsum Dolor Si Amet"
-tags: ["markdown", "text"]
-thumbnail: /blog-post.jpg
+description: 
+tags: ["Docker"]
+thumbnail: https://picsum.photos/id/131/800/400
 ---
 
 ## Docker 基本概念

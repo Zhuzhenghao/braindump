@@ -1,10 +1,10 @@
 ---
-author: "Zhuzhenghao"
+author: 朱正浩
 title: WebAssembly | A Beginner's Guide
 date: 2021-07-13
 description: "Lorem Ipsum Dolor Si Amet"
-tags: ["markdown", "text"]
-thumbnail: wasm.png
+tags: ["WebAssembly"]
+thumbnail: https://picsum.photos/id/156/800/400
 ---
 
 ## Introduction

@@ -1,10 +1,10 @@
 ---
-author: "Hugo Authors"
+author: 张茜
 title: Nginx
 date: 2021-07-13
-description: "Lorem Ipsum Dolor Si Amet"
-tags: ["markdown", "text"]
-thumbnail: /blog-post.jpg
+description: 'Nginx Config'
+tags: ['nginx']
+thumbnail: https://picsum.photos/id/141/800/400
 ---
 
 ### nginx 定义及作用
@@ -18,7 +18,7 @@ thumbnail: /blog-post.jpg
 - [Windows 系统的 安装步骤](https://cloud.tencent.com/developer/article/1795087)
 
 ​ 在下载了 nginx 后，cmd 下运行 nginx.exe 文件时，出现错误`nginx: [emerg] bind() to 0.0.0.0:80 failed (10013: An attempt was made to access a socket in a way forbidden by its access permissions)`意思是 80 端口被占用，只需要找到 nginx 的配置文件 conf 文件，打开 nginx.conf，把里面的`listen 80 `；改成没有占用的端口就可以了，然后 cmd 下运行`nginx.exe`文件，重启。
-![img](./imgs/image-20230529110940267.png)
+![img](images/nginx/image-20230529110940267.png)
 
 - [Mac 安装步骤](https://juejin.cn/post/6986190222241464350)
 
@@ -98,13 +98,13 @@ docker ps -a
 docker start db7307a31361
 ```
 
-![img](./imgs/image-20230518155201422.png)
+![img](images/nginx/image-20230518155201422.png)
 
 如截图，第二行是运行 nginx-test 的容器，打开页面输入网址 http://localhost:8080/，能看见 Welcome to nginx! :kissing_heart:
 
 同理，也可以直接在 docker 的 dashboard 操作：
 
-![img](./imgs/image-20230601140845130.png)
+![img](images/nginx/image-20230601140845130.png)
 
 ---
 
@@ -119,7 +119,7 @@ docker images
 docker run -it nginx /bin/bash
 ```
 
-![img](./imgs/image-20230518161025169.png)
+![img](images/nginx/image-20230518161025169.png)
 
 > 参数说明：
 >
@@ -240,7 +240,7 @@ docker cp /usr/nginx/nginx.conf nginx:/etc/nginx/nginx.conf
 
 为了`加快网站解析的速度`，可以把**动态资源 (jsp，servlet...) **和 **静态资源 (html，css，js，img...) **由不同的服务器来解析(分开部署)，加快解析速度，降低原来单个服务器的压力。
 
-![img](./imgs/image-20230528205309819.png)
+![img](images/nginx/image-20230528205309819.png)
 
 静态资源一般要和项目做分离，然后利用负载均衡加载静态资源。
 
@@ -259,7 +259,7 @@ docker run -di --name=nginx -p 90:80 -v /Users/zhangqian/Desktop/frontEnd/html/m
 >
 > -v 目录挂载 冒号前为 外部目录，冒号后为 容器内目录；相当于外部目录中的内容会映射同步到容器内
 
-![img](./imgs/image-20230529221958907.png)
+![img](images/nginx/image-20230529221958907.png)
 
 进入到容器命令：
 
@@ -273,7 +273,7 @@ docker exec -it 5510b1dc79dabc93f206159b5d7ae94b92852004ef811b71249d1c6282b6af9c
 cd /etc/nginx/conf.d/
 ```
 
-![img](./imgs/image-20230529223138574.png)
+![img](images/nginx/image-20230529223138574.png)
 
 **nginx.conf **：
 
@@ -364,7 +364,7 @@ server {
 
 转发代理，通常称为`代理`、`代理服务器`或 `Web 代理`，是位于一组客户端计算机之前的服务器。当这些计算机向 Internet 上的站点和服务发出请求时，代理服务器将拦截这些请求，然后代表客户端与 Web 服务器进行通信，起到中间设备的作用。
 
-![img](./imgs/image-20230514095051014.png)
+![img](images/nginx/image-20230514095051014.png)
 
 例如，典型的转发代理通信中涉及 3 台计算机：
 
@@ -403,7 +403,7 @@ server {
 >
 > F：一台或多台源站
 
-![img](./imgs/image-20230514095018788.png)
+![img](images/nginx/image-20230514095018788.png)
 
 #### 2.2 反向代理作用
 
@@ -486,9 +486,9 @@ http {
 
 根据访问的路径跳转到不同端口的服务中，Nginx 监听端口为 80
 
-> 访问http://localhost:8081/document/ 直接跳转到 127.0.0.1:82
+> 访问 http://localhost:8081/document/ 直接跳转到 127.0.0.1:82
 >
-> 访问http://localhost:8081/education/ 直接跳转到 127.0.0.1:83
+> 访问 http://localhost:8081/education/ 直接跳转到 127.0.0.1:83
 
 第一步，需要准备两个代理镜像，一个 82 端口，一个 83 端口，并准备好测试的页面
 
@@ -506,9 +506,9 @@ docker run -di --name=nginx83 -p 82:80 -v /Users/zhangqian/Desktop/frontEnd/8083
 
 测试的页面：
 
-![img](./imgs/image-20230531225656123.png)
+![img](images/nginx/image-20230531225656123.png)
 
-![img](./imgs/image-20230531225741766.png)
+![img](images/nginx/image-20230531225741766.png)
 
 第二步，修改 nginx 的配置文件，在 http 块中配置 server
 
@@ -542,9 +542,9 @@ http {
 
 ---
 
-### nginx配置
+### nginx 配置
 
-上面做的所有配置（反向代理、动静分离等），都是基于nginx.conf的配置文件。
+上面做的所有配置（反向代理、动静分离等），都是基于 nginx.conf 的配置文件。
 
 去掉注释信息后，可以将 nginx.conf 配置文件分为三部分：
 
@@ -770,7 +770,7 @@ http {
 
 3、在 websocket-test 网站进行测试，[网址链接 🔗](http://websocket-test.com)
 
-![img](./imgs/image-20230602221219507.png)
+![img](images/nginx/image-20230602221219507.png)
 
 即可看到连接了 websocket！
 
@@ -926,7 +926,7 @@ brew install nss # if you use Firefox
 
 **手动下载二进制安装 [mkcert](https://github.com/FiloSottile/mkcert/releases) ：**:point_left:（brew 安装有问题的可以采用该方法）
 
-![img](./imgs/image-20230603172946279.png)
+![img](images/nginx/image-20230603172946279.png)
 
 ```cmd
 ./mkcert-amd
@@ -975,7 +975,7 @@ The certificate is at "cert.pem" and the key at "key.pem" ✅
 It will expire on 3 September 2025
 ```
 
-![img](./imgs/image-20230603175024455.png)
+![img](images/nginx/image-20230603175024455.png)
 
 **4）将文件挂载到容器中，在当前目录中托管文件**：
 
@@ -987,11 +987,11 @@ docker run -it -v /Users/zhangqian/Desktop/frontEnd/cert.pem:/ssl/cert.pem -v /U
 
 **5）检验成果**：导航到[https://localhost](https://localhost/)（或上面的任何名称，证书是为其生成的），就能够看到内容。
 
-![img](./imgs/image-20230603211459668.png)
+![img](images/nginx/image-20230603211459668.png)
 
 此处也可以通过命令查看：`curl -k -I https://localhost/`证书信息，此时可以清晰看到采用了`HTTP/2 200 `，对比别的端口服务，如 `curl -I http://localhost:82 `，可以发现 HTTP 不同：
 
-![img](./imgs/image-20230603211747240.png)
+![img](images/nginx/image-20230603211747240.png)
 
 > 注：这里可能会出现的问题，如果是自签名的证书，在 chrome 默认的安全环境中会认为这个证书是无效的，还需要将该证书加入证书的信任链中。
 
@@ -999,47 +999,47 @@ docker run -it -v /Users/zhangqian/Desktop/frontEnd/cert.pem:/ssl/cert.pem -v /U
 
 ### 4. 跨域
 
-由于浏览器的同源策略，用来限制从一个源加载的文档或脚本与来自另一个源的资源进行交互。那怎样判断是否是同源呢？如果协议，端口（如果指定了）和主机对于两个页面是相同的，则两个页面具有相同的源，也就是同源。也就是说，要同时满足以下3个条件，才能叫同源：协议相同、端口相同、主机相同
+由于浏览器的同源策略，用来限制从一个源加载的文档或脚本与来自另一个源的资源进行交互。那怎样判断是否是同源呢？如果协议，端口（如果指定了）和主机对于两个页面是相同的，则两个页面具有相同的源，也就是同源。也就是说，要同时满足以下 3 个条件，才能叫同源：协议相同、端口相同、主机相同
 
 > **只要`协议`，`域名`， `端口`，任意一个不一样，** **都算跨域**。
 
 #### **4.1 常见跨域情况**
 
-- 网络协议不同，如http协议访问https协议 ;
-- 端口不同，如80端口访问8080端口 ;
+- 网络协议不同，如 http 协议访问 https 协议 ;
+- 端口不同，如 80 端口访问 8080 端口 ;
 - 域名不同，如www.test1.com访问www.test2.com ;
-- 子域名不同，如abc.test1.com访问def.test1.com ;
+- 子域名不同，如 abc.test1.com 访问 def.test1.com ;
 
-一般Nginx解决跨域问题有2种方式，一般用第一种。
+一般 Nginx 解决跨域问题有 2 种方式，一般用第一种。
 
-- 通过配置 header方式解决跨域（CORS跨域） ;
+- 通过配置 header 方式解决跨域（CORS 跨域） ;
 - 通过反向代理 ;
 
 priflight 说明是个预请求，CORS 机制跨域会首先进行 preflight（一个 OPTIONS 请求)， 该请求成功后才会发送真正的请求。 这一设计旨在确保服务器对 CORS 标准知情，以保护不支持 CORS 的旧服务器。
 
-![img](./imgs/image-20230604202839858.png)
+![img](images/nginx/image-20230604202839858.png)
 
-跨域主要涉及4个响应头：
+跨域主要涉及 4 个响应头：
 
 > Access-Control-Allow-Origin 用于设置允许跨域请求源地址 （预检请求和正式请求在跨域时候都会验证）
 >
 > Access-Control-Allow-Headers 跨域允许携带的特殊头信息字段 （只在预检请求验证）
 >
-> Access-Control-Allow-Methods 跨域允许的请求方法或者说HTTP动词 （只在预检请求验证），允许请求的方法，比如 GET,POST,PUT,DELETE
+> Access-Control-Allow-Methods 跨域允许的请求方法或者说 HTTP 动词 （只在预检请求验证），允许请求的方法，比如 GET,POST,PUT,DELETE
 >
 > Access-Control-Allow-Credentials 是否允许跨域使用 cookies，如果要跨域使用 cookies，可以添加上此请求响应头，值设为 true（设置或者不设置，都不会影响请求发送，只会影响在跨域时候是否要携带 cookies，但是如果设置，预检请求和正式请求都需要设置）。不过不建议跨域使用（项目中用到过，不过不稳定，有些浏览器带不过去），除非必要，因为有很多方案可以代替。
 
-#### **4.2 nginx跨域-实战**
+#### **4.2 nginx 跨域-实战**
 
-**1）启动一个Nginx84镜像来测试**：
+**1）启动一个 Nginx84 镜像来测试**：
 
 ```cmd
 docker run -di --name=nginx84 -p 84:80 -v /Users/zhangqian/Desktop/frontEnd/8084/nginx.conf:/etc/nginx/nginx.conf nginx
 ```
 
-一开始84配置同上面82就显示如上图的跨域报错。
+一开始 84 配置同上面 82 就显示如上图的跨域报错。
 
-**2）在nginx.conf中配置如下请求头**：
+**2）在 nginx.conf 中配置如下请求头**：
 
 ```
 location / {
@@ -1059,7 +1059,7 @@ location / {
 // GET
 var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
-xhr.open("GET", "http://localhost:84/");
+xhr.open('GET', 'http://localhost:84/');
 xhr.send(null);
 xhr.onload = function (e) {
   var xhr = e.target;
@@ -1069,8 +1069,8 @@ xhr.onload = function (e) {
 
 **4）测试**：
 
-访问project页面，页面发送请求访问localhost:84，此时能够正常发送请求了！:grin:
+访问 project 页面，页面发送请求访问 localhost:84，此时能够正常发送请求了！:grin:
 
-![img](./imgs/image-20230605170518375.png)
+![img](images/nginx/image-20230605170518375.png)
 
-![img](./imgs/image-20230605170541674.png)
+![img](images/nginx/image-20230605170541674.png)

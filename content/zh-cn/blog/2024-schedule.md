@@ -25,7 +25,7 @@ thumbnail: https://picsum.photos/id/111/800/400
 | 🕑  | 6.4   | 纯前端处理多数据渲染                                           | 张鹏胜    |
 | 🕑  | 6.18  | [尚硅谷 Webpack5 入门到原理][9]                                | P65 - P71 |
 | 🙈  | 6.25  |                                                                | 李艳      |
-| 🕑  | 7.2   | 浏览器跨 tab 窗口通信[浏览器跨 tab 窗口通信]                   | 秦凯      |
+| 🕑  | 7.2   | 浏览器跨 tab 窗口通信 [浏览器跨 tab 窗口通信]                   | 秦凯      |
 | 🕑  | 7.16  | [尚硅谷 Webpack5 入门到原理][10]                               | P60 - P64 |
 | 🙈  | 7.30  |                                                                | 孙国斌    |
 | 🕑  | 8.6   | 手撸 Vue3 特性（一）                                           | 韦超      |
@@ -54,3 +54,4 @@ thumbnail: https://picsum.photos/id/111/800/400
 [12]: https://www.bilibili.com/video/BV14T4y1z7sw?p=72&vd_source=8f204ac9b5a7074fda6cebea0d263d40
 [13]: https://www.bilibili.com/video/BV14T4y1z7sw?p=78&vd_source=8f204ac9b5a7074fda6cebea0d263d40
 [14]: https://www.bilibili.com/video/BV14T4y1z7sw?p=82&vd_source=8f204ac9b5a7074fda6cebea0d263d40
+[浏览器跨 tab 窗口通信]: https://dev.to/notachraf/sharing-a-state-between-windows-without-a-serve-23an?ref=dailydev

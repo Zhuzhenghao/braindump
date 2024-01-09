@@ -4,7 +4,7 @@ title: 'Vitest'
 date: 2021-07-15
 description: 'Guide to emoji usage in Hugo'
 tags: ['emoji']
-thumbnail: https://picsum.photos/id/1050/400/250
+thumbnail: https://picsum.photos/id/14/800/400
 ---
 
 [项目地址](https://gitlab.daocloud.cn/guobin.sun/k8s-ui)
@@ -30,7 +30,7 @@ thumbnail: https://picsum.photos/id/1050/400/250
 
 ```js
 /// <reference types="vitest" />
-import { defineConfig } from "vitest/config";
+import { defineConfig } from 'vitest/config';
 export default defineConfig({
   test: {
     // ...
@@ -100,26 +100,26 @@ export const getValidateMsg = (type: IValidateMsgType, insertStr: string | strin
 - type 为 IValidateMsgType.MAX_LENGTH, insertStr 为 [test, 10]
 
 ```js
-import { describe, expect, it } from "vitest";
-import { getValidateMsg, IValidateMsgType } from "../common";
+import { describe, expect, it } from 'vitest';
+import { getValidateMsg, IValidateMsgType } from '../common';
 
 // 1. type = IValidateMsgType.EMPTY, insertStr 不传
 // 2. type = IValidateMsgType.EMPTY, insertStr = test
 // 3. type = IValidateMsgType.MAX_LENGTH, insertStr = [test, 10]
-describe("test getValidateMsg", () => {
-  it("type empty, no insertStr", () => {
+describe('test getValidateMsg', () => {
+  it('type empty, no insertStr', () => {
     const result = getValidateMsg(IValidateMsgType.EMPTY);
-    expect(result).toBe("是必须的, 请输入！");
+    expect(result).toBe('是必须的, 请输入！');
   });
 
-  it("type empty, insertStr test", () => {
-    const result = getValidateMsg(IValidateMsgType.EMPTY, "test");
-    expect(result).toBe("test是必须的, 请输入test！");
+  it('type empty, insertStr test', () => {
+    const result = getValidateMsg(IValidateMsgType.EMPTY, 'test');
+    expect(result).toBe('test是必须的, 请输入test！');
   });
 
-  it("type maxLength, insertStr [test, 10]", () => {
-    const result = getValidateMsg(IValidateMsgType.MAX_LENGTH, ["test", "10"]);
-    expect(result).toBe("test长度不能超过10个字符！");
+  it('type maxLength, insertStr [test, 10]', () => {
+    const result = getValidateMsg(IValidateMsgType.MAX_LENGTH, ['test', '10']);
+    expect(result).toBe('test长度不能超过10个字符！');
   });
 });
 ```
@@ -236,22 +236,22 @@ describe('KNamespace', () => {
 在 vue 组件中，双向数据绑定是最常见的一种模式，所以我们来看下怎么测试 `v-model`
 
 ```js
-test("test v-model", async () => {
+test('test v-model', async () => {
   const wrapper = mount(KNamespace, {
     props: {
-      type: "input",
-      modelValue: "abcd",
+      type: 'input',
+      modelValue: 'abcd',
       filterable: true,
       autofocus: true,
       clearable: true,
       disabled: false,
-      placeholder: "请输入",
-      "onUpdate:modelValue": (e) => wrapper.setProps({ modelValue: e }),
+      placeholder: '请输入',
+      'onUpdate:modelValue': e => wrapper.setProps({ modelValue: e }),
     },
   });
-  expect(wrapper.find(".k-namespace-input").exists()).toBe(true);
-  await wrapper.find("input").setValue("efg");
-  expect(wrapper.props("modelValue")).toBe("efg");
+  expect(wrapper.find('.k-namespace-input').exists()).toBe(true);
+  await wrapper.find('input').setValue('efg');
+  expect(wrapper.props('modelValue')).toBe('efg');
 });
 ```
 
@@ -260,19 +260,19 @@ test("test v-model", async () => {
 这里我们将 disabled 设置为 true，测试下是否正确展示
 
 ```js
-test("test disabled", () => {
+test('test disabled', () => {
   const wrapper = mount(KNamespace, {
     props: {
-      type: "input",
-      modelValue: "abcd",
+      type: 'input',
+      modelValue: 'abcd',
       filterable: true,
       autofocus: true,
       clearable: true,
       disabled: true,
-      placeholder: "请输入",
+      placeholder: '请输入',
     },
   });
-  expect(wrapper.find(".is-disabled").exists()).toBe(true);
+  expect(wrapper.find('.is-disabled').exists()).toBe(true);
 });
 ```
 
@@ -320,7 +320,7 @@ test('test click trigger', async () => {
 然后我们加入配置中
 
 ```js
-import vueJsx from "@vitejs/plugin-vue-jsx";
+import vueJsx from '@vitejs/plugin-vue-jsx';
 export default defineConfig({
   plugins: [
     vueJsx(),

@@ -3,7 +3,7 @@ author: 主正浩
 title: Git Rebase 详解
 date: 2021-07-13
 description: 玩转 Git rebase
-tags: ['git']
+tags: ['Git']
 thumbnail: https://picsum.photos/id/113/800/400
 ---
 
@@ -12,7 +12,7 @@ thumbnail: https://picsum.photos/id/113/800/400
 git rebase 命令的文档描述是 `Reapply commits on top of another base tip`，「在另一个基端之上重新应用提交」.
 这个定义听起来有点抽象，换个角度可以理解为「将分支的基础从一个提交改成另一个提交，使其看起来就像是从另一个提交中创建了分支一样」，如下图：
 
-![](images/git/rebase/git-rebase-visual.png)
+![git rebase](images/git/git-rebase-visual.png)
 
 ## 主要用途
 
@@ -26,7 +26,7 @@ git checkout main
 # main 分支提交两次 commit B C
 ```
 
-![git commit](images/git/rebase/2023-03-29-14-29-15.png)
+![git commit](images/git/2023-03-29-14-29-15.png)
 
 ```shell
 git checkout feature
@@ -34,14 +34,14 @@ git checkout feature
 git push --set-upstream origin feature
 ```
 
-![](images/git/rebase/2023-03-29-14-39-01.png)
+![git rebase](images/git/2023-03-29-14-39-01.png)
 
 ```shell
 git rebase main
 git push -f
 ```
 
-![](images/git/rebase/2023-03-29-14-41-26.png)
+![git rebase](images/git/2023-03-29-14-41-26.png)
 
 ## 为什么要使用 Git Rebase？
 
@@ -110,15 +110,15 @@ git rebase --autostash
 
 ### Squashing commits
 
-![](images/git/rebase/2023-03-29-15-23-23.png)
+![git rebase](images/git/2023-03-29-15-23-23.png)
 
 ```shell
 git rebase -i HEAD~3
 ```
 
-![](images/git/rebase/iShot_2023-03-29_15.30.55.gif)
+![git rebase](images/git/iShot_2023-03-29_15.30.55.gif)
 
-![](images/git/rebase/2023-03-29-15-33-50.png)
+![git rebase](images/git/2023-03-29-15-33-50.png)
 
 > 本文参考链接：
 >
