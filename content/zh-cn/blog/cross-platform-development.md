@@ -31,7 +31,7 @@ thumbnail: https://picsum.photos/id/121/800/400
 
 **“一次编写，到处运行”的出现**
 
-![跨端时间线图](https://cdn.nlark.com/yuque/0/2023/png/22899992/1697011973613-d1d790c2-cbe2-4cfe-ab08-5dac225e707e.png#averageHue=%23bbb40c&clientId=u3f7aebeb-ae5b-4&from=paste&height=930&id=u560fb268&originHeight=1860&originWidth=3868&originalType=binary&ratio=2&rotation=0&showTitle=true&size=574642&status=done&style=none&taskId=u0abca6a5-dd1f-4c5e-a0cb-33d347ce597&title=%E8%B7%A8%E7%AB%AF%E6%97%B6%E9%97%B4%E7%BA%BF%E5%9B%BE&width=1934 '跨端时间线图')
+![跨端时间线图](images/cross-platform-development/cross-platform-development-1.png '跨端时间线图')
 
 #### 早期阶段
 
@@ -41,7 +41,7 @@ thumbnail: https://picsum.photos/id/121/800/400
 
 所以 PhoneGap 和 Cordova 这两个技术方案本质就是针对不同平台的 WebView 做了扩展和封装，是同源的，使得 WebView 这个原生组件，变成了可访问设备本地 API 的强大浏览器。Cordova 打开了跨端领域的一个新大门，Bridge 的思想被广泛传播。
 
-![PhoneGap](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696779758593-8f8fc8e8-d894-4d60-ba38-16ca731a2cab.png#averageHue=%23f0efef&clientId=u0c4bfe9d-c5b1-4&from=paste&height=244&id=u0a967a87&originHeight=648&originWidth=870&originalType=binary&ratio=2&rotation=0&showTitle=true&size=314947&status=done&style=none&taskId=u885b562a-d91a-43de-acaf-b43c94f698d&title=PhoneGap&width=327 'PhoneGap') ![Cordova](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696779792520-f2b99552-f91b-468b-b72d-6defb1e4efdc.png#averageHue=%23c9c168&clientId=u0c4bfe9d-c5b1-4&from=paste&height=255&id=xBZyr&originHeight=980&originWidth=1240&originalType=binary&ratio=2&rotation=0&showTitle=true&size=267588&status=done&style=none&taskId=u476b3c97-05b9-449a-bc76-ba055e6eaef&title=Cordova&width=323 'Cordova')
+![PhoneGap](images/cross-platform-development/cross-platform-development-2.png 'PhoneGap') ![Cordova](images/cross-platform-development/cross-platform-development-3.png 'Cordova')
 
 #### 中期阶段
 
@@ -53,7 +53,7 @@ React Native 和 Weex 技术的出现都是为了解决 Web 容器加载、解�
 
 2017 微信小程序正式发布，而它是一种不需要下载安装即可使用的应用，它实现了应用“触手可及”的梦想，用户通过扫一扫或搜一下即可打开应用。小程序不仅解决了用户想在短时间内获取服务并且不需要下载 APP 的问题，还开发了一个新的商业模式，借助微信 APP 本身的大流量很方便的帮助商家从线上引流，扩大营销渠道，沉淀用户的需求。小程序的成功让那些拥有巨大流量 APP 的背后巨头也纷纷开始效仿，开发出了自己的小程序平台。
 
-![各个平台小程序分布图](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696781244576-b67d41bf-8d9f-4de9-9680-a33dd6022cbe.png#averageHue=%23f3c42a&clientId=u32647b40-8d6f-4&from=paste&height=385&id=u16cc81b0&originHeight=770&originWidth=2634&originalType=binary&ratio=2&rotation=0&showTitle=true&size=599444&status=done&style=none&taskId=ud3109a58-c79a-4f9b-b3db-a69bc75b7e2&title=%E5%90%84%E4%B8%AA%E5%B9%B3%E5%8F%B0%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%88%86%E5%B8%83%E5%9B%BE&width=1317 '各个平台小程序分布图')
+![各个平台小程序分布图](images/cross-platform-development/cross-platform-development-4.png '各个平台小程序分布图')
 
 2018 年，阿里、百度、字节跳动、手机厂商等各大巨头纷纷发布自己的小程序。同年 12 月，Flutter 1.0 在 Flutter Live 活动中发布，是该框架的第一个“稳定”版本，不过因为在小程序快速发展时期，它在国内没有得到应有的热度。2019 年，QQ 也加入小程序队列，各家小程序全面开花，从此正式进入终端碎片化时代。
 
@@ -109,7 +109,7 @@ Flutter 是性能与构建思路几乎最接近原生开发的框架，又能够
 
 整体过程为：开发构建完代码后，由跨端运行时加载并执行，首先进行 JS 业务逻辑执行，在 JS 引擎中可以通过调用 JS Bridge（一种将 Native 能力通过 JS 对象暴露给 JS 代码调用的技术）实现原生功能的调用（例如扫码、通知），产生 UI 相关的变更后，通过模板渲染 VM（或者其他类似的模块）生成 VDOM，传递给布局引擎进行 UI 的布局更新，再交由渲染引擎调用原生组件或自渲染引擎进行 UI 绘制。逻辑层和视图层会双向通信，执行 UI 更新或事件回调，这个过程由于在不同的线程或进程中进行，因此需要跨线程通信，涉及到数据的序列化和反序列化，这个过程有性能消耗，因此频繁 set 大量的数据会显著影响跨端 UI 的性能。
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696905230984-dc1b7b48-56fc-4752-a3ac-352389728122.png#averageHue=%23797a79&clientId=udedaffd5-ea0d-4&from=paste&height=503&id=u4e1e2f92&originHeight=1114&originWidth=1418&originalType=binary&ratio=2&rotation=0&showTitle=false&size=139739&status=done&style=none&taskId=udfb27b90-72bc-4aa0-bdbb-958878101fa&title=&width=640)
+![image.png](images/cross-platform-development/cross-platform-development-5.png)
 
 ## 跨端框架介绍
 
@@ -123,14 +123,14 @@ React Native 是 Facebook 于 2015 年在 F8 大会开源的 JavaScript 跨端�
 
 使用了 Virtual DOM（虚拟 DOM），只需编写一套代码，便可以将代码打包成不同平台的 App。React Native 放弃了采用浏览器控件渲染，采用了由原生接管绘制的方案。原生端和 JavaScript 交互是通过 Bridge 进行的，Bridge 的作用就是给 React Native 内嵌的 JS Engine 提供原生接口的扩展供 JS 调用。所有的本地存储、图片资源访问、图形图像绘制、3D 加速、网络访问、震动效果、NFC、原生控件绘制、地图、定位、通知等都是通过 Bridge 封装成 JS 接口以后注入 JS Engine 供 JS 调用。理论上，任何原生代码能实现的效果都可以通过 Bridge 封装成 JS 可以调用的组件和方法, 以 JS 模块的形式提供给 RN 使用。
 
-![React Native 技术架构](https://cdn.nlark.com/yuque/0/2023/png/22899992/1697031320099-a7283b9d-e6bf-4105-8108-a1ab44d69e35.png#averageHue=%23f0a30b&clientId=u3f7aebeb-ae5b-4&from=paste&height=860&id=u11a93f84&originHeight=1720&originWidth=3204&originalType=binary&ratio=2&rotation=0&showTitle=true&size=206764&status=done&style=none&taskId=u094daa1d-7ccc-495c-88ee-7c962cf0b42&title=React%20Native%20%E6%8A%80%E6%9C%AF%E6%9E%B6%E6%9E%84&width=1602 'React Native 技术架构')
+![React Native 技术架构](images/cross-platform-development/cross-platform-development-6.png 'React Native 技术架构')
 
 > 绿色的是我们应用开发的部分，我们写的代码基本上都是在这一层；
 > 蓝色代表公用的跨平台的代码和工具引擎，一般我们不会动蓝色部分的代码；
 > 黄色代表平台相关的 bridge 代码，做定制化的时候会添加修改代码；
 > 红色代表系统平台的功能，另外红色上面有一个虚线，表示所有平台相关的东西都通过 bridge 隔离开来了，红色部分是独立于 React Native 的；
 
-![React Native 三线程模式](https://cdn.nlark.com/yuque/0/2023/png/22899992/1697034557124-abff9953-8945-4927-90d7-eb798608f891.png#averageHue=%23e3c800&clientId=u3f7aebeb-ae5b-4&from=paste&height=736&id=uf75333e1&originHeight=1472&originWidth=3240&originalType=binary&ratio=2&rotation=0&showTitle=true&size=204067&status=done&style=none&taskId=u26abd11e-3aa5-484c-ad3d-90be58a46b0&title=React%20Native%20%E4%B8%89%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%BC%8F&width=1620 'React Native 三线程模式')
+![React Native 三线程模式](images/cross-platform-development/cross-platform-development-7.png 'React Native 三线程模式')
 
 **渲染器在多个线程之间分配渲染流水线**
 
@@ -163,9 +163,9 @@ const YourApp = () => {
 export default YourApp;
 ```
 
-![预览效果](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696867211015-94df5848-81a7-4071-80ed-7c7ee0e855c4.png#averageHue=%23e3e3e3&clientId=u4540c50c-ddd0-4&from=paste&height=398&id=fu4pb&originHeight=928&originWidth=580&originalType=binary&ratio=2&rotation=0&showTitle=true&size=56768&status=done&style=none&taskId=u012a1f72-abcf-4c87-bae6-27ddb7c968e&title=%E9%A2%84%E8%A7%88%E6%95%88%E6%9E%9C&width=249 '预览效果')![可使用 React 调试器](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696867375262-663aac0d-2d5d-4460-8c34-61d0f0bd37bd.png#averageHue=%23b2b1b1&clientId=u4540c50c-ddd0-4&from=paste&height=383&id=u68d2e852&originHeight=1424&originWidth=1824&originalType=binary&ratio=2&rotation=0&showTitle=true&size=599079&status=done&style=none&taskId=u46923ad4-26eb-4e72-bfd4-880b4c21c5f&title=%E5%8F%AF%E4%BD%BF%E7%94%A8%20React%20%E8%B0%83%E8%AF%95%E5%99%A8&width=491 '可使用 React 调试器')
+![预览效果](images/cross-platform-development/cross-platform-development-8.png '预览效果')![可使用 React 调试器](images/cross-platform-development/cross-platform-development-9.png '可使用 React 调试器')
 
-![支持端内调试](https://cdn.nlark.com/yuque/0/2023/gif/22899992/1696867514115-2639a7c4-18b0-4e89-a280-e8f34a54f9a5.gif#averageHue=%23f1f1f1&clientId=u4540c50c-ddd0-4&from=ui&id=ub22dc5a0&originHeight=589&originWidth=318&originalType=binary&ratio=2&rotation=0&showTitle=true&size=1131627&status=done&style=none&taskId=uba07fd49-ba92-4475-8b5b-1be4bfc7ca0&title=%E6%94%AF%E6%8C%81%E7%AB%AF%E5%86%85%E8%B0%83%E8%AF%95 '支持端内调试')
+![支持端内调试](images/cross-platform-development/cross-platform-development-10.gif '支持端内调试')
 
 #### 原生模块
 
@@ -181,7 +181,7 @@ const styles = StyleSheet.create({
 
 #### 架构升级
 
-![0.68 之后的新架构图](https://cdn.nlark.com/yuque/0/2023/png/22899992/1697094267257-e9a00af3-f4b9-4c26-822f-f33ac65a559a.png#averageHue=%23fcfcfc&clientId=u99ca9a6f-bcfe-4&from=paste&height=403&id=il1D9&originHeight=805&originWidth=1512&originalType=binary&ratio=2&rotation=0&showTitle=true&size=217907&status=done&style=none&taskId=uef9d4a1b-5d54-4b6b-bfdb-12cd0a96d0b&title=0.68%20%E4%B9%8B%E5%90%8E%E7%9A%84%E6%96%B0%E6%9E%B6%E6%9E%84%E5%9B%BE&width=756 '0.68 之后的新架构图')
+![0.68 之后的新架构图](images/cross-platform-development/cross-platform-development-11.png '0.68 之后的新架构图')
 
 在通信方式、渲染器、NativeModules 等都发生了改变：
 
@@ -195,9 +195,9 @@ const styles = StyleSheet.create({
 
 [Showcase · React Native](https://reactnative.dev/showcase)
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696868700543-a9083ad7-7972-4252-a121-dab61c6df015.png#averageHue=%23fcfbf5&clientId=u4540c50c-ddd0-4&from=paste&height=264&id=u8d1e1138&originHeight=1148&originWidth=1036&originalType=binary&ratio=2&rotation=0&showTitle=false&size=873762&status=done&style=none&taskId=ud6fac4e3-31ba-4ddd-9c12-8a6486caeab&title=&width=238)![image.png](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696868723717-4bd643e9-2ba4-48e8-84ef-2aa2047ea895.png#averageHue=%23fbfcfb&clientId=u4540c50c-ddd0-4&from=paste&height=267&id=uaccf2e39&originHeight=1144&originWidth=1544&originalType=binary&ratio=2&rotation=0&showTitle=false&size=1213369&status=done&style=none&taskId=u09433125-0478-46db-8136-63360f8f634&title=&width=360)
+![image.png](images/cross-platform-development/cross-platform-development-12.png)![image.png](images/cross-platform-development/cross-platform-development-13.png)
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696868813044-3a404031-d174-4d63-8865-e0581ca81634.png#averageHue=%23f9faf9&clientId=u4540c50c-ddd0-4&from=paste&height=139&id=u45138705&originHeight=570&originWidth=524&originalType=binary&ratio=2&rotation=0&showTitle=false&size=221194&status=done&style=none&taskId=ue105cc44-c58a-4070-b00a-a5f4f514875&title=&width=128)![image.png](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696868787191-92834f16-26af-4431-8f8e-9a34a78d3936.png#averageHue=%23fdfdfc&clientId=u4540c50c-ddd0-4&from=paste&height=133&id=u6f7b1c88&originHeight=582&originWidth=1046&originalType=binary&ratio=2&rotation=0&showTitle=false&size=405214&status=done&style=none&taskId=udc122e3a-e15a-478a-abab-93a9bf33d98&title=&width=239)
+![image.png](images/cross-platform-development/cross-platform-development-14)![image.png](images/cross-platform-development/cross-platform-development-15.png)
 
 ### [Taro](https://docs.taro.zone/docs/)
 
@@ -218,17 +218,17 @@ Taro 是一个开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv
 - JSX 适配工作量大，限制多；
 - 维护和迭代比较困难。Taro 编译时代码⾮常的复杂且离散，维护迭代都⾮常的困难；
 
-![Taro 2 架构图](https://cdn.nlark.com/yuque/0/2023/png/22899992/1696902579733-e4ce491e-6be4-4b9b-b568-59f33fdd711d.png#averageHue=%23e6eace&clientId=udedaffd5-ea0d-4&from=paste&height=573&id=aCaSz&originHeight=1146&originWidth=1314&originalType=binary&ratio=2&rotation=0&showTitle=true&size=452433&status=done&style=none&taskId=u216ed2dc-1ad9-4d76-835e-f27ba58dd98&title=Taro%202%20%E6%9E%B6%E6%9E%84%E5%9B%BE&width=657 'Taro 2 架构图')
+![Taro 2 架构图](images/cross-platform-development/cross-platform-development-16.png 'Taro 2 架构图')
 
 **Taro 3**
 
 Taro 3 的基本原理是直接模拟了一套类似浏览器 BOM/DOM 的 API，下层通过适配各个小程序平台 API 抹平差异，如此，和浏览器的 API 类似，则可以直接在上层支持 React、Vue 等 DSL。例如 React 通过 react-reconciler（实现了 VDOM、diff/fiber 算法）连接 Render（在这层调用浏览器 BOM/DOM），而 Taro 3 自己实现了一个类似的 Render，叫做 taro-react，内部则是实用 Taro 自己的那一套 BOM/DOM API。同时配套提供了统一抽象的标准组件库和 API，也是为了抹平小程序平台间的差异。
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/22899992/1697039674802-02b9d2e9-2796-4d51-a354-1f47d91849f2.png#averageHue=%23f5e8e2&clientId=u3f7aebeb-ae5b-4&from=paste&height=323&id=u0b3a5408&originHeight=646&originWidth=1512&originalType=binary&ratio=2&rotation=0&showTitle=false&size=250357&status=done&style=none&taskId=uc5e33a4c-1643-4e5b-a3aa-491d848b49e&title=&width=756)
+![image.png](images/cross-platform-development/cross-platform-development-17.png)
 
 ⽤户的 React 或 Vue 的代码会通过 CLI 进⾏ Webpack 打包，在运⾏时会提供 React 和 Vue 对应的适配器进⾏适配，然后调⽤ Taro 提供的 DOM 和 BOM API， 最后把整个程序渲染到所有的⼩程序端上⾯。
 
-![image.png](https://cdn.nlark.com/yuque/0/2023/png/22899992/1697039681890-85b0a3e6-3a78-44fe-943e-7cdcf04f5f8d.png#averageHue=%23f8f7f6&clientId=u3f7aebeb-ae5b-4&from=paste&height=305&id=udef6421a&originHeight=610&originWidth=654&originalType=binary&ratio=2&rotation=0&showTitle=false&size=103150&status=done&style=none&taskId=udc62fb77-6e2f-4032-a451-cf47fe15c6f&title=&width=327)![image.png](https://cdn.nlark.com/yuque/0/2023/png/22899992/1697039693309-56a21360-d7f3-4ded-b432-29a185b49260.png#averageHue=%23fefefc&clientId=u3f7aebeb-ae5b-4&from=paste&height=297&id=u88a20d20&originHeight=594&originWidth=742&originalType=binary&ratio=2&rotation=0&showTitle=false&size=106305&status=done&style=none&taskId=u6a02fb65-940e-4d1e-b807-c2339d150d9&title=&width=371)
+![image.png](images/cross-platform-development/cross-platform-development-18.png)![image.png](images/cross-platform-development/cross-platform-development-19.png)
 
 #### DSL & 开发套件
 
@@ -274,7 +274,7 @@ function Index() {
 
 Ruff 开发板接入物联网平台：
 
-![空气质量监控应用](https://cdn.nlark.com/yuque/0/2023/png/22899992/1697038903143-1243a662-2f8a-4df6-b413-38d8d983d64b.png#averageHue=%23eae3d9&clientId=u3f7aebeb-ae5b-4&from=paste&height=337&id=uc8b0d165&originHeight=414&originWidth=735&originalType=binary&ratio=2&rotation=0&showTitle=true&size=198028&status=done&style=none&taskId=u6d02fa63-7e9b-4cff-ab4a-10e73fa97cf&title=%E7%A9%BA%E6%B0%94%E8%B4%A8%E9%87%8F%E7%9B%91%E6%8E%A7%E5%BA%94%E7%94%A8&width=598.5 '空气质量监控应用')
+![空气质量监控应用](images/cross-platform-development/cross-platform-development-20.png '空气质量监控应用')
 
 ### 桌面端小程序
 
